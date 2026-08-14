@@ -1,0 +1,32 @@
+{
+  "Rules": [
+    {
+      "SettingName": "CertPresent",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://learn.microsoft.com/en-us/intune/intune-service/protect/compliance-custom-json",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Required certificate is missing",
+          "Description": "The required machine certificate was not found in the expected certificate store."
+        }
+      ]
+    },
+    {
+      "SettingName": "CertNotExpired30Days",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://learn.microsoft.com/en-us/intune/intune-service/protect/compliance-custom-json",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Certificate expires too soon",
+          "Description": "The required machine certificate is missing or expires in less than 30 days."
+        }
+      ]
+    }
+  ]
+}
