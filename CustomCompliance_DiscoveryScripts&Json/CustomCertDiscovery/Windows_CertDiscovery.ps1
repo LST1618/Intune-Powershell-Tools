@@ -1,12 +1,12 @@
 $storePath = 'Cert:\LocalMachine\My'
-$subjectPattern = 'CN=WhateverDomain Test Certificate'
-$issuerPattern = 'CN=WhateverDomain Test Certificate'
+$subject = 'CN=WhateverDomain Test Certificate'
+$issuer = 'CN=WhateverDomain Test Certificate'
 $minimumDaysRemaining = 30
 
 $matchingCert = Get-ChildItem -Path $storePath -ErrorAction SilentlyContinue |
     Where-Object {
-        $_.Subject -like "*$subjectPattern*" -and
-        $_.Issuer -like "*$issuerPattern*"
+        $_.Subject -like "*$subject*" -and
+        $_.Issuer -like "*$issuer*"
     } |
     Sort-Object NotAfter -Descending |
     Select-Object -First 1

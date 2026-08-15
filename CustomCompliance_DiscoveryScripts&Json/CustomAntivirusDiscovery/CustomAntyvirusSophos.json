@@ -1,12 +1,13 @@
 {
   "Rules": [
     {
-      "SettingName": "AntivirusRegistered",
-      "Operator": "IsEquals",
-      "DataType": "Boolean",
-      "Operand": true,
-      "RemediationStrings": [
-        {
+        "SettingName": "AntivirusRegistered",
+        "Operator": "IsEquals",
+        "DataType": "Boolean",
+        "Operand": true,
+        "MoreInfoUrl": "https://www.sophos.com/en-us/products/endpoint-antivirus",
+        "RemediationStrings": [
+            {
           "Language": "en_US",
           "Title": "Sophos Antivirus is not detected.",
           "Description": "Install or re-register Sophos Antivirus on the device."
