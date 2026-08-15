@@ -16,4 +16,4 @@ if ($expected) {
     } 
 }
 
-return $result | ConvertTo-Json
+return $result | ConvertTo-Json -Compress

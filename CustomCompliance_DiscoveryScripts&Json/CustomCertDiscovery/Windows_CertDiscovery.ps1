@@ -23,9 +23,6 @@ if ($certPresent) {
 $result = @{
     CertPresent = $certPresent
     CertNotExpired30Days = $notExpired
-    CertThumbprint = if ($certPresent) { $matchingCert.Thumbprint } else { "" }
-    CertSubject = if ($certPresent) { $matchingCert.Subject } else { "" }
-    CertIssuer = if ($certPresent) { $matchingCert.Issuer } else { "" }
 }
 
-return $result | ConvertTo-Json
+return $result | ConvertTo-Json -Compress
