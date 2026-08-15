@@ -1,0 +1,17 @@
+{
+  "Rules": [
+    {
+      "SettingName": "AntivirusRegistered",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Sophos Antivirus is not detected.",
+          "Description": "Install or re-register Sophos Antivirus on the device."
+        }
+      ]
+    }
+  ]
+}
