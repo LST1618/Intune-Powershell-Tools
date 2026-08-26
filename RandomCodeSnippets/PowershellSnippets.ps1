@@ -36,3 +36,9 @@ Resolve-DnsName "autodiscover.$domain" -Type CNAME | Select Name, NameHost
 
 "SPF"
 Resolve-DnsName $domain -Type TXT | Where-Object { $_.Strings -match "v=spf1" } | Select -ExpandProperty Strings
+
+
+### AD Automation
+Install-WindowsFeature -Name RSAT-AD-Tools -IncludeAllSubFeature -verbose
+
+Import-Module ActiveDirectory -verbose

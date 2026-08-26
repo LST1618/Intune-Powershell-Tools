@@ -155,7 +155,7 @@ foreach ($ou in $ouList) {
 
 # User sub-OUs
 $userRoot = "OU=Users,$topOU"
-$userOUs = @("HQ","Krakow","Wroclaw","Poznan","Gdansk","Sales","IT","HR","Finance","Operations","Interns")
+$userOUs = @("HQ","Krakow","Wroclaw","Poznan","Gdansk","Sales","IT","HR","Finance","Operations","Interns","Marketing","Support","Engineering")
 foreach ($ou in $userOUs) {
     New-LabOU -Name $ou -Path $userRoot
 }
@@ -210,13 +210,28 @@ $firstNames = @(
     "Dawid","Dominik","Ewa","Filip","Grzegorz","Hubert","Iga","Izabela","Jakub","Jan","Joanna","Kacper","Karol",
     "Katarzyna","Konrad","Krzysztof","Laura","Lena","Lukasz","Magda","Maja","Marek","Marcin","Mateusz","Michal",
     "Monika","Natalia","Nikodem","Olga","Patryk","Pawel","Piotr","Rafal","Sandra","Sebastian","Sylwia","Tomasz",
-    "Weronika","Wiktor","Zofia"
+    "Weronika","Wiktor","Zofia",
+    "Alicja","Antoni","Barbara","Blazej","Bogdan","Bozena","Celina","Cyprian","Dariusz","Dorota","Edyta","Emilia",
+    "Eryk","Fabian","Felicja","Gabriel","Genowefa","Gustaw","Halina","Henryk","Ida","Ignacy","Irena","Ireneusz",
+    "Jadwiga","Jaroslaw","Jerzy","Julia","Julian","Justyna","Kamil","Kamila","Karolina","Klara","Klaudia","Krystian",
+    "Krystyna","Ksawery","Leon","Leszek","Liwia","Lidia","Malgorzata","Marta","Marian","Mariusz","Marzena","Mikolaj",
+    "Milena","Miroslaw","Nadia","Nina","Norbert","Oliwia","Oskar","Robert","Roman","Roza","Ryszard","Slawomir",
+    "Stanislaw","Stefan","Szymon","Teodor","Teresa","Urszula","Wanda","Waldemar","Wieslaw","Wladyslaw","Zbigniew",
+    "Zdzislaw","Zenon","Zuzanna","Aleksander","Amelia","Aniela","Bogumila","Bronislaw","Czeslaw","Elzbieta","Feliks",
+    "Florentyna","Franciszek","Gabriela","Gerard","Grazyna","Iwona","Jacek","Kazimiera","Kordian","Lucja","Marlena",
+    "Natan","Radoslaw","Wojciech","Zdzislawa"
 )
 
 $lastNames = @(
     "Nowak","Kowalski","Wisniewski","Wojcik","Kowalczyk","Kaminski","Lewandowski","Zielinski","Szymanski","Wozniak",
     "Dabrowski","Kozlowski","Jankowski","Mazur","Krawczyk","Piotrowski","Grabowski","Nowicka","Pawlak","Michalski",
-    "Król","Wieczorek","Jablonski","Wrobel","Stepien","Duda","Zajac","Adamczyk","Pawlowski","Walczak"
+    "Krol","Wieczorek","Jablonski","Wrobel","Stepien","Duda","Zajac","Adamczyk","Pawlowski","Walczak",
+    "Sikora","Baran","Rutkowski","Michalak","Szewczyk","Ostrowski","Tomaszewski","Pietrzak","Wojciechowski","Jaworski",
+    "Wojtowicz","Sadowski","Marciniak","Zawadzki","Sikorski","Wysocki","Wieczorkowski","Urbaniak","Kwiatkowski","Wilczek",
+    "Kubiak","Kaczmarek","Malinowski","Gorski","Wisniewska","Bednarek","Czerwinski","Cieslak","Witkowski","Andrzejewski",
+    "Baranowski","Chmielewski","Cichon","Domanski","Frankowski","Gajewski","Halas","Idzik","Jaskolski","Kalinowski",
+    "Lis","Majewski","Nawrocki","Olszewski","Perkowski","Rogalski","Sobczak","Szulc","Tarnowski","Urban",
+    "Wasilewski","Zaremba","Zawisza","Bogdanowicz","Cwiklinski","Dobrzynski","Eliasz","Fabianski","Gluszek","Halasa"
 )
 
 $departments = @("IT","HR","Finance","Sales","Operations","Marketing","Support","Engineering")
@@ -331,7 +346,7 @@ foreach ($dept in $managerDepartments) {
 
             # Mail & Entra
             proxyAddresses      = @("SMTP:$mail","smtp:$sam@$($dnsRoot)")
-            #usageLocation       = "PL"
+            #usageLocation       = "PL"  ###  Entra ID Attribute
         }
 
         $managerUsers += [PSCustomObject]@{
@@ -408,7 +423,7 @@ while ($userCreated -lt $UserCount) {
         }
     }
 
-    if (-not (Get-ADUser -LDAPFilter "(sAMAccountName=$sam)" -SearchBase $topOU -ErrorAction SilentlyContinue)) {
+    if (-not ((Get-ADUser -LDAPFilter "(sAMAccountName=$sam)" -SearchBase $topOU -ErrorAction SilentlyContinue) -and (Get-ADUser -LDAPFilter "(cn=$displayName)" -SearchBase $topOU -ErrorAction SilentlyContinue))) {
         New-ADUser `
             -Name $displayName `
             -GivenName $fn `
@@ -431,7 +446,8 @@ while ($userCreated -lt $UserCount) {
             -Country $office.Country `
             -PostalCode $office.Postal `
             -StreetAddress $office.Street `
-            -Description $description
+            -Description $description `
+            #-ErrorAction SilentlyContinue
 
         $mgr = $managerUsers | Where-Object Department -eq $dept | Get-Random
         $employeeId = "EMP$("{0:D5}" -f (Get-Random -Minimum 1 -Maximum 99999))"
@@ -453,9 +469,10 @@ while ($userCreated -lt $UserCount) {
             manager             = $mgr.DistinguishedName
             physicalDeliveryOfficeName = $office.Office
             proxyAddresses      = $proxy
-            #usageLocation       = "PL"
-            mailNickname        = $sam
-}
+            #usageLocation       = "PL"   ### Entra ID Attirbute
+            #mailNickname        = $sam   ### Needs Exchange Schema
+        }
+
 
         Set-OptionalUserAttributes -Identity $sam -Replace $replace
 
@@ -527,10 +544,9 @@ foreach ($acct in $specialAccounts) {
 
         Set-OptionalUserAttributes -Identity $acct.Sam -Replace @{
             info                 = $acct.Ext1
-            extensionAttribute15 = "LAB"
-            #usageLocation = "PL"
+            #usageLocation = "PL"  ### Entra ID Attribute
             proxyAddresses = @("SMTP:$($acct.UPN)")
-            mailNickname = $acct.Sam
+            #mailNickname = $acct.Sam      ### Needs Exchange Schema
         }
         Write-Log "Created special account: $($acct.Name)"
     }
