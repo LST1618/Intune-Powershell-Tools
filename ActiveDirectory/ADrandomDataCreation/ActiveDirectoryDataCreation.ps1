@@ -67,10 +67,10 @@ function Ensure-Group {
     }
 }
 
-function Get-Random {
-    param([array]$Items)
-    return $Items | Get-Random
-}
+#function Get-Random {
+    #param([array]$Items)
+    #return $Items | Get-Random
+#}
 
 function Get-UniqueSam {
     param(
@@ -317,19 +317,23 @@ foreach ($dept in $managerDepartments) {
             -PostalCode $office.Postal `
             -StreetAddress $office.Street `
             -Description "Lab seeded manager account"
+
         Set-OptionalUserAttributes -Identity $sam -Replace @{
+            # IDs / flags
             employeeID          = "MGR$((Get-Random -Minimum 1000 -Maximum 9999))"
-            extensionAttribute1 = "SYNC"
-            extensionAttribute2 = "MANAGER"
-            extensionAttribute3 = $dept
-            extensionAttribute10= "PL"
-            extensionAttribute15= "LAB"
+            info                = $ext1      
+            employeeType        = Get-Random @("A","B","C")              
+            department          = $dept                     
+            # Location
             co                  = "Poland"
             countryCode         = $office.CountryCode
             physicalDeliveryOfficeName = $office.Office
+
+            # Mail & Entra
             proxyAddresses      = @("SMTP:$mail","smtp:$sam@$($dnsRoot)")
-            usageLocation       = "PL"
+            #usageLocation       = "PL"
         }
+
         $managerUsers += [PSCustomObject]@{
             Department = $dept
             Sam = $sam
@@ -438,22 +442,20 @@ while ($userCreated -lt $UserCount) {
         }
 
         $replace = @{
-            employeeID                  = $employeeId
-            extensionAttribute1         = $ext1
-            extensionAttribute2         = $dept
-            extensionAttribute3         = $office.City
-            extensionAttribute4         = $(if ($enabled) { "ACTIVE" } else { "DISABLED" })
-            extensionAttribute5         = $(Get-Random @("A","B","C"))
-            extensionAttribute10        = "PL"
-            extensionAttribute15        = "LAB"
-            co                          = "Poland"
-            countryCode                 = $office.CountryCode
-            manager                     = $mgr.DistinguishedName
-            physicalDeliveryOfficeName  = $office.Office
-            proxyAddresses              = $proxy
-            usageLocation               = "PL"
-            mailNickname                = $sam
-        }
+            employeeID          = $employeeId
+            info                = $ext1                          
+            department          = $dept                           
+            l                   = $office.City                    
+            description         = $(if ($enabled) { 'ACTIVE' } else { 'DISABLED' })
+            employeeType        = Get-Random @("A","B","C")       
+            co                  = "Poland"                        
+            countryCode         = $office.CountryCode
+            manager             = $mgr.DistinguishedName
+            physicalDeliveryOfficeName = $office.Office
+            proxyAddresses      = $proxy
+            #usageLocation       = "PL"
+            mailNickname        = $sam
+}
 
         Set-OptionalUserAttributes -Identity $sam -Replace $replace
 
@@ -524,9 +526,9 @@ foreach ($acct in $specialAccounts) {
             -Description $acct.Desc
 
         Set-OptionalUserAttributes -Identity $acct.Sam -Replace @{
-            extensionAttribute1 = $acct.Ext1
+            info                 = $acct.Ext1
             extensionAttribute15 = "LAB"
-            usageLocation = "PL"
+            #usageLocation = "PL"
             proxyAddresses = @("SMTP:$($acct.UPN)")
             mailNickname = $acct.Sam
         }
