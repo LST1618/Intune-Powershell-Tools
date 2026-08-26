@@ -566,7 +566,7 @@ for ($i = 1; $i -le 15; $i++) {
         New-ADObject -Name $name -Type contact -Path $contactPath -OtherAttributes @{
             displayName = $name
             mail = $mail
-            targetAddress = "SMTP:$mail"
+            #targetAddress = "SMTP:$mail"
             company = "PartnerCo"
             description = "External contact for GAL/sync lab"
         }
@@ -619,7 +619,6 @@ $extraComputers = @(
 foreach ($c in $extraComputers) {
     if (-not (Get-ADComputer -LDAPFilter "(cn=$($c.Name))" -SearchBase $topOU -ErrorAction SilentlyContinue)) {
         New-ADComputer -Name $c.Name -SamAccountName $c.Name -Path $c.Path -Enabled $c.Enabled -OperatingSystem $c.OS -OperatingSystemVersion $c.Vers -Description $c.Desc
-        if (-not $c.Enabled) { Disable-ADAccount -Identity $c.Name }
         Write-Log "Created extra computer: $($c.Name)"
     }
 }
