@@ -1,0 +1,2732 @@
+﻿[
+    {
+        "lDAPDisplayName":  "account",
+        "defaultObjectCategory":  "CN=account,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "0.9.2342.19200300.100.4.5",
+        "adminDisplayName":  "account",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=account)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=account,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "aCSPolicy",
+        "defaultObjectCategory":  "CN=ACS-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.137",
+        "adminDisplayName":  "ACS-Policy",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=aCSPolicy)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ACS-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "aCSResourceLimits",
+        "defaultObjectCategory":  "CN=ACS-Resource-Limits,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.191",
+        "adminDisplayName":  "ACS-Resource-Limits",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=aCSResourceLimits)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ACS-Resource-Limits,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "aCSSubnet",
+        "defaultObjectCategory":  "CN=ACS-Subnet,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.138",
+        "adminDisplayName":  "ACS-Subnet",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=aCSSubnet)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ACS-Subnet,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "addressBookContainer",
+        "defaultObjectCategory":  "CN=Address-Book-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.125",
+        "adminDisplayName":  "Address-Book-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=addressBookContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Address-Book-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "addressTemplate",
+        "defaultObjectCategory":  "CN=Address-Template,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "displayTemplate",
+        "governsID":  "1.2.840.113556.1.3.58",
+        "adminDisplayName":  "Address-Template",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=addressTemplate)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Address-Template,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "applicationEntity",
+        "defaultObjectCategory":  "CN=Application-Entity,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "2.5.6.12",
+        "adminDisplayName":  "Application-Entity",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=applicationEntity)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Application-Entity,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "applicationProcess",
+        "defaultObjectCategory":  "CN=Application-Process,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "2.5.6.11",
+        "adminDisplayName":  "Application-Process",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=applicationProcess)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Application-Process,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "applicationSettings",
+        "defaultObjectCategory":  "CN=Application-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.7000.49",
+        "adminDisplayName":  "Application-Settings",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=applicationSettings)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Application-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "applicationSiteSettings",
+        "defaultObjectCategory":  "CN=Application-Site-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.68",
+        "adminDisplayName":  "Application-Site-Settings",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=applicationSiteSettings)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Application-Site-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "applicationVersion",
+        "defaultObjectCategory":  "CN=Application-Version,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "applicationSettings",
+        "governsID":  "1.2.840.113556.1.5.216",
+        "adminDisplayName":  "Application-Version",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=applicationVersion)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Application-Version,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "attributeSchema",
+        "defaultObjectCategory":  "CN=Attribute-Schema,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.3.14",
+        "adminDisplayName":  "Attribute-Schema",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=attributeSchema)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Attribute-Schema,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "bootableDevice",
+        "defaultObjectCategory":  "CN=BootableDevice,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.3.6.1.1.1.2.12",
+        "adminDisplayName":  "bootableDevice",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=bootableDevice)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=BootableDevice,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "builtinDomain",
+        "defaultObjectCategory":  "CN=Builtin-Domain,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.4",
+        "adminDisplayName":  "Builtin-Domain",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=builtinDomain)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Builtin-Domain,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "categoryRegistration",
+        "defaultObjectCategory":  "CN=Category-Registration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "leaf",
+        "governsID":  "1.2.840.113556.1.5.74",
+        "adminDisplayName":  "Category-Registration",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=categoryRegistration)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Category-Registration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "certificationAuthority",
+        "defaultObjectCategory":  "CN=Certification-Authority,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "2.5.6.16",
+        "adminDisplayName":  "Certification-Authority",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=certificationAuthority)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Certification-Authority,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "classRegistration",
+        "defaultObjectCategory":  "CN=Class-Registration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "leaf",
+        "governsID":  "1.2.840.113556.1.5.10",
+        "adminDisplayName":  "Class-Registration",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=classRegistration)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Class-Registration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "classSchema",
+        "defaultObjectCategory":  "CN=Class-Schema,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.3.13",
+        "adminDisplayName":  "Class-Schema",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=classSchema)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Class-Schema,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "classStore",
+        "defaultObjectCategory":  "CN=Class-Store,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.44",
+        "adminDisplayName":  "Class-Store",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=classStore)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Class-Store,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "comConnectionPoint",
+        "defaultObjectCategory":  "CN=Com-Connection-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "connectionPoint",
+        "governsID":  "1.2.840.113556.1.5.11",
+        "adminDisplayName":  "Com-Connection-Point",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=comConnectionPoint)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Com-Connection-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "computer",
+        "defaultObjectCategory":  "CN=Computer,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "user",
+        "governsID":  "1.2.840.113556.1.3.30",
+        "adminDisplayName":  "Computer",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=computer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Computer,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "configuration",
+        "defaultObjectCategory":  "CN=Configuration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.12",
+        "adminDisplayName":  "Configuration",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=configuration)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Configuration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "connectionPoint",
+        "defaultObjectCategory":  "CN=Connection-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "leaf",
+        "governsID":  "1.2.840.113556.1.5.14",
+        "adminDisplayName":  "Connection-Point",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=connectionPoint)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Connection-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "contact",
+        "defaultObjectCategory":  "CN=Person,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "organizationalPerson",
+        "governsID":  "1.2.840.113556.1.5.15",
+        "adminDisplayName":  "Contact",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=contact)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Person,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "container",
+        "defaultObjectCategory":  "CN=Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.3.23",
+        "adminDisplayName":  "Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=container)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "controlAccessRight",
+        "defaultObjectCategory":  "CN=Control-Access-Right,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.77",
+        "adminDisplayName":  "Control-Access-Right",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=controlAccessRight)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Control-Access-Right,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "country",
+        "defaultObjectCategory":  "CN=Country,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "2.5.6.2",
+        "adminDisplayName":  "Country",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=country)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Country,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "cRLDistributionPoint",
+        "defaultObjectCategory":  "CN=CRL-Distribution-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "2.5.6.19",
+        "adminDisplayName":  "CRL-Distribution-Point",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=cRLDistributionPoint)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=CRL-Distribution-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "crossRef",
+        "defaultObjectCategory":  "CN=Cross-Ref,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.3.11",
+        "adminDisplayName":  "Cross-Ref",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=crossRef)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Cross-Ref,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "crossRefContainer",
+        "defaultObjectCategory":  "CN=Cross-Ref-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.7000.53",
+        "adminDisplayName":  "Cross-Ref-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=crossRefContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Cross-Ref-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "device",
+        "defaultObjectCategory":  "CN=Device,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "2.5.6.14",
+        "adminDisplayName":  "Device",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=device)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Device,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "dfsConfiguration",
+        "defaultObjectCategory":  "CN=Dfs-Configuration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.42",
+        "adminDisplayName":  "Dfs-Configuration",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=dfsConfiguration)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Dfs-Configuration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "dHCPClass",
+        "defaultObjectCategory":  "CN=DHCP-Class,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.132",
+        "adminDisplayName":  "DHCP-Class",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=dHCPClass)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=DHCP-Class,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "displaySpecifier",
+        "defaultObjectCategory":  "CN=Display-Specifier,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.84",
+        "adminDisplayName":  "Display-Specifier",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=displaySpecifier)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Display-Specifier,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "displayTemplate",
+        "defaultObjectCategory":  "CN=Display-Template,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.3.59",
+        "adminDisplayName":  "Display-Template",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=displayTemplate)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Display-Template,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "dMD",
+        "defaultObjectCategory":  "CN=DMD,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.3.9",
+        "adminDisplayName":  "DMD",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=dMD)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=DMD,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "dnsNode",
+        "defaultObjectCategory":  "CN=Dns-Node,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.86",
+        "adminDisplayName":  "Dns-Node",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=dnsNode)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Dns-Node,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "dnsZone",
+        "defaultObjectCategory":  "CN=Dns-Zone,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.85",
+        "adminDisplayName":  "Dns-Zone",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=dnsZone)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Dns-Zone,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "dnsZoneScope",
+        "defaultObjectCategory":  "CN=Dns-Zone-Scope,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.301",
+        "adminDisplayName":  "Dns-Zone-Scope",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=dnsZoneScope)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Dns-Zone-Scope,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "dnsZoneScopeContainer",
+        "defaultObjectCategory":  "CN=Dns-Zone-Scope-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.300",
+        "adminDisplayName":  "Dns-Zone-Scope-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=dnsZoneScopeContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Dns-Zone-Scope-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "document",
+        "defaultObjectCategory":  "CN=document,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "0.9.2342.19200300.100.4.6",
+        "adminDisplayName":  "document",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=document)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=document,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "documentSeries",
+        "defaultObjectCategory":  "CN=documentSeries,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "0.9.2342.19200300.100.4.9",
+        "adminDisplayName":  "documentSeries",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=documentSeries)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=documentSeries,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "domain",
+        "defaultObjectCategory":  "CN=Domain-DNS,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.66",
+        "adminDisplayName":  "Domain",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=domain)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Domain-DNS,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "domainDNS",
+        "defaultObjectCategory":  "CN=Domain-DNS,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "domain",
+        "governsID":  "1.2.840.113556.1.5.67",
+        "adminDisplayName":  "Domain-DNS",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=domainDNS)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Domain-DNS,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "domainPolicy",
+        "defaultObjectCategory":  "CN=Domain-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "leaf",
+        "governsID":  "1.2.840.113556.1.5.18",
+        "adminDisplayName":  "Domain-Policy",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=domainPolicy)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Domain-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "domainRelatedObject",
+        "defaultObjectCategory":  "CN=domainRelatedObject,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "0.9.2342.19200300.100.4.17",
+        "adminDisplayName":  "domainRelatedObject",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=domainRelatedObject)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=domainRelatedObject,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "dSA",
+        "defaultObjectCategory":  "CN=DSA,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "applicationEntity",
+        "governsID":  "2.5.6.13",
+        "adminDisplayName":  "DSA",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=dSA)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=DSA,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "dSUISettings",
+        "defaultObjectCategory":  "CN=DS-UI-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.183",
+        "adminDisplayName":  "DS-UI-Settings",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=dSUISettings)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=DS-UI-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "dynamicObject",
+        "defaultObjectCategory":  "CN=Dynamic-Object,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.3.6.1.4.1.1466.101.119.2",
+        "adminDisplayName":  "Dynamic-Object",
+        "description":  "This class, if present in an entry, indicates that this entry has a limited lifetime and may disappear automatically when its time-to-live has reached 0. If the client has not supplied a value for the entryTtl attribute, the server will provide one.",
+        "LDAPFilterExample":  "(objectCategory=dynamicObject)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Dynamic-Object,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "fileLinkTracking",
+        "defaultObjectCategory":  "CN=File-Link-Tracking,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.52",
+        "adminDisplayName":  "File-Link-Tracking",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=fileLinkTracking)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=File-Link-Tracking,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "fileLinkTrackingEntry",
+        "defaultObjectCategory":  "CN=File-Link-Tracking-Entry,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.59",
+        "adminDisplayName":  "File-Link-Tracking-Entry",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=fileLinkTrackingEntry)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=File-Link-Tracking-Entry,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "foreignSecurityPrincipal",
+        "defaultObjectCategory":  "CN=Foreign-Security-Principal,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.76",
+        "adminDisplayName":  "Foreign-Security-Principal",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=foreignSecurityPrincipal)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Foreign-Security-Principal,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "friendlyCountry",
+        "defaultObjectCategory":  "CN=friendlyCountry,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "country",
+        "governsID":  "0.9.2342.19200300.100.4.18",
+        "adminDisplayName":  "friendlyCountry",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=friendlyCountry)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=friendlyCountry,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "fTDfs",
+        "defaultObjectCategory":  "CN=FT-Dfs,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.43",
+        "adminDisplayName":  "FT-Dfs",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=fTDfs)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=FT-Dfs,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "group",
+        "defaultObjectCategory":  "CN=Group,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.8",
+        "adminDisplayName":  "Group",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=group)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Group,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "groupOfNames",
+        "defaultObjectCategory":  "CN=Group-Of-Names,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "2.5.6.9",
+        "adminDisplayName":  "Group-Of-Names",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=groupOfNames)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Group-Of-Names,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "groupOfUniqueNames",
+        "defaultObjectCategory":  "CN=groupOfUniqueNames,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "2.5.6.17",
+        "adminDisplayName":  "groupOfUniqueNames",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=groupOfUniqueNames)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=groupOfUniqueNames,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "groupPolicyContainer",
+        "defaultObjectCategory":  "CN=Group-Policy-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "container",
+        "governsID":  "1.2.840.113556.1.5.157",
+        "adminDisplayName":  "Group-Policy-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=groupPolicyContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Group-Policy-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "ieee802Device",
+        "defaultObjectCategory":  "CN=IEEE802Device,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.3.6.1.1.1.2.11",
+        "adminDisplayName":  "ieee802Device",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=ieee802Device)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=IEEE802Device,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "indexServerCatalog",
+        "defaultObjectCategory":  "CN=Index-Server-Catalog,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "connectionPoint",
+        "governsID":  "1.2.840.113556.1.5.130",
+        "adminDisplayName":  "Index-Server-Catalog",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=indexServerCatalog)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Index-Server-Catalog,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "inetOrgPerson",
+        "defaultObjectCategory":  "CN=Person,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "user",
+        "governsID":  "2.16.840.1.113730.3.2.2",
+        "adminDisplayName":  "inetOrgPerson",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=inetOrgPerson)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Person,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "infrastructureUpdate",
+        "defaultObjectCategory":  "CN=Infrastructure-Update,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.175",
+        "adminDisplayName":  "Infrastructure-Update",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=infrastructureUpdate)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Infrastructure-Update,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "intellimirrorGroup",
+        "defaultObjectCategory":  "CN=Intellimirror-Group,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.152",
+        "adminDisplayName":  "Intellimirror-Group",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=intellimirrorGroup)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Intellimirror-Group,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "intellimirrorSCP",
+        "defaultObjectCategory":  "CN=Intellimirror-SCP,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "serviceAdministrationPoint",
+        "governsID":  "1.2.840.113556.1.5.151",
+        "adminDisplayName":  "Intellimirror-SCP",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=intellimirrorSCP)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Intellimirror-SCP,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "interSiteTransport",
+        "defaultObjectCategory":  "CN=Inter-Site-Transport,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.141",
+        "adminDisplayName":  "Inter-Site-Transport",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=interSiteTransport)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Inter-Site-Transport,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "interSiteTransportContainer",
+        "defaultObjectCategory":  "CN=Inter-Site-Transport-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.140",
+        "adminDisplayName":  "Inter-Site-Transport-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=interSiteTransportContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Inter-Site-Transport-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "ipHost",
+        "defaultObjectCategory":  "CN=IpHost,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.3.6.1.1.1.2.6",
+        "adminDisplayName":  "ipHost",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=ipHost)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=IpHost,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "ipNetwork",
+        "defaultObjectCategory":  "CN=IpNetwork,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.3.6.1.1.1.2.7",
+        "adminDisplayName":  "ipNetwork",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=ipNetwork)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=IpNetwork,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "ipProtocol",
+        "defaultObjectCategory":  "CN=IpProtocol,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.3.6.1.1.1.2.4",
+        "adminDisplayName":  "ipProtocol",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=ipProtocol)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=IpProtocol,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "ipsecBase",
+        "defaultObjectCategory":  "CN=Ipsec-Base,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.7000.56",
+        "adminDisplayName":  "Ipsec-Base",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=ipsecBase)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Ipsec-Base,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "ipsecFilter",
+        "defaultObjectCategory":  "CN=Ipsec-Filter,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "ipsecBase",
+        "governsID":  "1.2.840.113556.1.5.118",
+        "adminDisplayName":  "Ipsec-Filter",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=ipsecFilter)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Ipsec-Filter,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "ipsecISAKMPPolicy",
+        "defaultObjectCategory":  "CN=Ipsec-ISAKMP-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "ipsecBase",
+        "governsID":  "1.2.840.113556.1.5.120",
+        "adminDisplayName":  "Ipsec-ISAKMP-Policy",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=ipsecISAKMPPolicy)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Ipsec-ISAKMP-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "ipsecNegotiationPolicy",
+        "defaultObjectCategory":  "CN=Ipsec-Negotiation-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "ipsecBase",
+        "governsID":  "1.2.840.113556.1.5.119",
+        "adminDisplayName":  "Ipsec-Negotiation-Policy",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=ipsecNegotiationPolicy)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Ipsec-Negotiation-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "ipsecNFA",
+        "defaultObjectCategory":  "CN=Ipsec-NFA,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "ipsecBase",
+        "governsID":  "1.2.840.113556.1.5.121",
+        "adminDisplayName":  "Ipsec-NFA",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=ipsecNFA)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Ipsec-NFA,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "ipsecPolicy",
+        "defaultObjectCategory":  "CN=Ipsec-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "ipsecBase",
+        "governsID":  "1.2.840.113556.1.5.98",
+        "adminDisplayName":  "Ipsec-Policy",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=ipsecPolicy)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Ipsec-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "ipService",
+        "defaultObjectCategory":  "CN=IpService,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.3.6.1.1.1.2.3",
+        "adminDisplayName":  "ipService",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=ipService)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=IpService,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "leaf",
+        "defaultObjectCategory":  "CN=Leaf,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.20",
+        "adminDisplayName":  "Leaf",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=leaf)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Leaf,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "licensingSiteSettings",
+        "defaultObjectCategory":  "CN=Licensing-Site-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "applicationSiteSettings",
+        "governsID":  "1.2.840.113556.1.5.78",
+        "adminDisplayName":  "Licensing-Site-Settings",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=licensingSiteSettings)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Licensing-Site-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "linkTrackObjectMoveTable",
+        "defaultObjectCategory":  "CN=Link-Track-Object-Move-Table,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "fileLinkTracking",
+        "governsID":  "1.2.840.113556.1.5.91",
+        "adminDisplayName":  "Link-Track-Object-Move-Table",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=linkTrackObjectMoveTable)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Link-Track-Object-Move-Table,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "linkTrackOMTEntry",
+        "defaultObjectCategory":  "CN=Link-Track-OMT-Entry,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "leaf",
+        "governsID":  "1.2.840.113556.1.5.93",
+        "adminDisplayName":  "Link-Track-OMT-Entry",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=linkTrackOMTEntry)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Link-Track-OMT-Entry,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "linkTrackVolEntry",
+        "defaultObjectCategory":  "CN=Link-Track-Vol-Entry,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "leaf",
+        "governsID":  "1.2.840.113556.1.5.92",
+        "adminDisplayName":  "Link-Track-Vol-Entry",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=linkTrackVolEntry)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Link-Track-Vol-Entry,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "linkTrackVolumeTable",
+        "defaultObjectCategory":  "CN=Link-Track-Volume-Table,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "fileLinkTracking",
+        "governsID":  "1.2.840.113556.1.5.90",
+        "adminDisplayName":  "Link-Track-Volume-Table",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=linkTrackVolumeTable)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Link-Track-Volume-Table,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "locality",
+        "defaultObjectCategory":  "CN=Locality,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "2.5.6.3",
+        "adminDisplayName":  "Locality",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=locality)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Locality,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "lostAndFound",
+        "defaultObjectCategory":  "CN=Lost-And-Found,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.139",
+        "adminDisplayName":  "Lost-And-Found",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=lostAndFound)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Lost-And-Found,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mailRecipient",
+        "defaultObjectCategory":  "CN=Mail-Recipient,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.3.46",
+        "adminDisplayName":  "Mail-Recipient",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mailRecipient)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Mail-Recipient,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "meeting",
+        "defaultObjectCategory":  "CN=Meeting,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.104",
+        "adminDisplayName":  "Meeting",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=meeting)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Meeting,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msAuthz-CentralAccessPolicies",
+        "defaultObjectCategory":  "CN=ms-Authz-Central-Access-Policies,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.4.2161",
+        "adminDisplayName":  "ms-Authz-Central-Access-Policies",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msAuthz-CentralAccessPolicies)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-Authz-Central-Access-Policies,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msAuthz-CentralAccessPolicy",
+        "defaultObjectCategory":  "CN=ms-Authz-Central-Access-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.4.2164",
+        "adminDisplayName":  "ms-Authz-Central-Access-Policy",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msAuthz-CentralAccessPolicy)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-Authz-Central-Access-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msAuthz-CentralAccessRule",
+        "defaultObjectCategory":  "CN=ms-Authz-Central-Access-Rule,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.4.2163",
+        "adminDisplayName":  "ms-Authz-Central-Access-Rule",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msAuthz-CentralAccessRule)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-Authz-Central-Access-Rule,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msAuthz-CentralAccessRules",
+        "defaultObjectCategory":  "CN=ms-Authz-Central-Access-Rules,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.4.2162",
+        "adminDisplayName":  "ms-Authz-Central-Access-Rules",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msAuthz-CentralAccessRules)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-Authz-Central-Access-Rules,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msCOM-Partition",
+        "defaultObjectCategory":  "CN=ms-COM-Partition,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.193",
+        "adminDisplayName":  "ms-COM-Partition",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msCOM-Partition)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-COM-Partition,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msCOM-PartitionSet",
+        "defaultObjectCategory":  "CN=ms-COM-PartitionSet,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.194",
+        "adminDisplayName":  "ms-COM-PartitionSet",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msCOM-PartitionSet)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-COM-PartitionSet,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDFS-DeletedLinkv2",
+        "defaultObjectCategory":  "CN=ms-DFS-Deleted-Link-v2,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.260",
+        "adminDisplayName":  "ms-DFS-Deleted-Link-v2",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDFS-DeletedLinkv2)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DFS-Deleted-Link-v2,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDFS-Linkv2",
+        "defaultObjectCategory":  "CN=ms-DFS-Link-v2,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.259",
+        "adminDisplayName":  "ms-DFS-Link-v2",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDFS-Linkv2)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DFS-Link-v2,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDFS-NamespaceAnchor",
+        "defaultObjectCategory":  "CN=ms-DFS-Namespace-Anchor,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.257",
+        "adminDisplayName":  "ms-DFS-Namespace-Anchor",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDFS-NamespaceAnchor)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DFS-Namespace-Anchor,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDFS-Namespacev2",
+        "defaultObjectCategory":  "CN=ms-DFS-Namespace-v2,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.258",
+        "adminDisplayName":  "ms-DFS-Namespace-v2",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDFS-Namespacev2)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DFS-Namespace-v2,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDFSR-Connection",
+        "defaultObjectCategory":  "CN=ms-DFSR-Connection,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.13.4.10",
+        "adminDisplayName":  "ms-DFSR-Connection",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDFSR-Connection)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DFSR-Connection,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDFSR-Content",
+        "defaultObjectCategory":  "CN=ms-DFSR-Content,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.13.4.6",
+        "adminDisplayName":  "ms-DFSR-Content",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDFSR-Content)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DFSR-Content,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDFSR-ContentSet",
+        "defaultObjectCategory":  "CN=ms-DFSR-ContentSet,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.13.4.7",
+        "adminDisplayName":  "ms-DFSR-ContentSet",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDFSR-ContentSet)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DFSR-ContentSet,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDFSR-GlobalSettings",
+        "defaultObjectCategory":  "CN=ms-DFSR-GlobalSettings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.13.4.4",
+        "adminDisplayName":  "ms-DFSR-GlobalSettings",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDFSR-GlobalSettings)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DFSR-GlobalSettings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDFSR-LocalSettings",
+        "defaultObjectCategory":  "CN=ms-DFSR-LocalSettings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.13.4.1",
+        "adminDisplayName":  "ms-DFSR-LocalSettings",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDFSR-LocalSettings)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DFSR-LocalSettings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDFSR-Member",
+        "defaultObjectCategory":  "CN=ms-DFSR-Member,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.13.4.9",
+        "adminDisplayName":  "ms-DFSR-Member",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDFSR-Member)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DFSR-Member,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDFSR-ReplicationGroup",
+        "defaultObjectCategory":  "CN=ms-DFSR-ReplicationGroup,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.13.4.5",
+        "adminDisplayName":  "ms-DFSR-ReplicationGroup",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDFSR-ReplicationGroup)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DFSR-ReplicationGroup,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDFSR-Subscriber",
+        "defaultObjectCategory":  "CN=ms-DFSR-Subscriber,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.13.4.2",
+        "adminDisplayName":  "ms-DFSR-Subscriber",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDFSR-Subscriber)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DFSR-Subscriber,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDFSR-Subscription",
+        "defaultObjectCategory":  "CN=ms-DFSR-Subscription,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.13.4.3",
+        "adminDisplayName":  "ms-DFSR-Subscription",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDFSR-Subscription)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DFSR-Subscription,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDFSR-Topology",
+        "defaultObjectCategory":  "CN=ms-DFSR-Topology,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.13.4.8",
+        "adminDisplayName":  "ms-DFSR-Topology",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDFSR-Topology)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DFSR-Topology,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDNS-ServerSettings",
+        "defaultObjectCategory":  "CN=ms-DNS-Server-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.4.2129",
+        "adminDisplayName":  "ms-DNS-Server-Settings",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDNS-ServerSettings)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DNS-Server-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-App-Configuration",
+        "defaultObjectCategory":  "CN=ms-DS-App-Configuration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "applicationSettings",
+        "governsID":  "1.2.840.113556.1.5.220",
+        "adminDisplayName":  "ms-DS-App-Configuration",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-App-Configuration)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-App-Configuration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-AppData",
+        "defaultObjectCategory":  "CN=ms-DS-App-Data,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "applicationSettings",
+        "governsID":  "1.2.840.113556.1.5.241",
+        "adminDisplayName":  "ms-DS-App-Data",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-AppData)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-App-Data,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-AuthNPolicies",
+        "defaultObjectCategory":  "CN=ms-DS-AuthN-Policies,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.293",
+        "adminDisplayName":  "Authentication Policies",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-AuthNPolicies)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-AuthN-Policies,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-AuthNPolicy",
+        "defaultObjectCategory":  "CN=ms-DS-AuthN-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.294",
+        "adminDisplayName":  "Authentication Policy",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-AuthNPolicy)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-AuthN-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-AuthNPolicySilo",
+        "defaultObjectCategory":  "CN=ms-DS-AuthN-Policy-Silo,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.292",
+        "adminDisplayName":  "Authentication Policy Silo",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-AuthNPolicySilo)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-AuthN-Policy-Silo,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-AuthNPolicySilos",
+        "defaultObjectCategory":  "CN=ms-DS-AuthN-Policy-Silos,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.291",
+        "adminDisplayName":  "Authentication Policy Silos",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-AuthNPolicySilos)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-AuthN-Policy-Silos,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-AzAdminManager",
+        "defaultObjectCategory":  "CN=ms-DS-Az-Admin-Manager,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.234",
+        "adminDisplayName":  "MS-DS-Az-Admin-Manager",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-AzAdminManager)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Az-Admin-Manager,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-AzApplication",
+        "defaultObjectCategory":  "CN=ms-DS-Az-Application,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.235",
+        "adminDisplayName":  "MS-DS-Az-Application",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-AzApplication)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Az-Application,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-AzOperation",
+        "defaultObjectCategory":  "CN=ms-DS-Az-Operation,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.236",
+        "adminDisplayName":  "MS-DS-Az-Operation",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-AzOperation)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Az-Operation,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-AzRole",
+        "defaultObjectCategory":  "CN=ms-DS-Az-Role,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.239",
+        "adminDisplayName":  "MS-DS-Az-Role",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-AzRole)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Az-Role,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-AzScope",
+        "defaultObjectCategory":  "CN=ms-DS-Az-Scope,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.237",
+        "adminDisplayName":  "MS-DS-Az-Scope",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-AzScope)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Az-Scope,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-AzTask",
+        "defaultObjectCategory":  "CN=ms-DS-Az-Task,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.238",
+        "adminDisplayName":  "MS-DS-Az-Task",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-AzTask)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Az-Task,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-ClaimsTransformationPolicies",
+        "defaultObjectCategory":  "CN=ms-DS-Claims-Transformation-Policies,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.281",
+        "adminDisplayName":  "ms-DS-Claims-Transformation-Policies",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-ClaimsTransformationPolicies)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Claims-Transformation-Policies,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-ClaimsTransformationPolicyType",
+        "defaultObjectCategory":  "CN=ms-DS-Claims-Transformation-Policy-Type,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.280",
+        "adminDisplayName":  "ms-DS-Claims-Transformation-Policy-Type",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-ClaimsTransformationPolicyType)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Claims-Transformation-Policy-Type,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-ClaimType",
+        "defaultObjectCategory":  "CN=ms-DS-Claim-Type,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "msDS-ClaimTypePropertyBase",
+        "governsID":  "1.2.840.113556.1.5.272",
+        "adminDisplayName":  "ms-DS-Claim-Type",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-ClaimType)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Claim-Type,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-ClaimTypePropertyBase",
+        "defaultObjectCategory":  "CN=ms-DS-Claim-Type-Property-Base,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.269",
+        "adminDisplayName":  "ms-DS-Claim-Type-Property-Base",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-ClaimTypePropertyBase)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Claim-Type-Property-Base,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-ClaimTypes",
+        "defaultObjectCategory":  "CN=ms-DS-Claim-Types,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.270",
+        "adminDisplayName":  "ms-DS-Claim-Types",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-ClaimTypes)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Claim-Types,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-CloudExtensions",
+        "defaultObjectCategory":  "CN=ms-DS-Cloud-Extensions,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.283",
+        "adminDisplayName":  "ms-DS-Cloud-Extensions",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-CloudExtensions)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Cloud-Extensions,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-Device",
+        "defaultObjectCategory":  "CN=ms-DS-Device,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.286",
+        "adminDisplayName":  "ms-DS-Device",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-Device)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Device,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-DeviceContainer",
+        "defaultObjectCategory":  "CN=ms-DS-Device-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.289",
+        "adminDisplayName":  "ms-DS-Device-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-DeviceContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Device-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-DeviceRegistrationService",
+        "defaultObjectCategory":  "CN=ms-DS-Device-Registration-Service,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.284",
+        "adminDisplayName":  "ms-DS-Device-Registration-Service",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-DeviceRegistrationService)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Device-Registration-Service,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-DeviceRegistrationServiceContainer",
+        "defaultObjectCategory":  "CN=ms-DS-Device-Registration-Service-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.287",
+        "adminDisplayName":  "ms-DS-Device-Registration-Service-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-DeviceRegistrationServiceContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Device-Registration-Service-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-GroupManagedServiceAccount",
+        "defaultObjectCategory":  "CN=ms-DS-Group-Managed-Service-Account,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "computer",
+        "governsID":  "1.2.840.113556.1.5.282",
+        "adminDisplayName":  "msDS-Group-Managed-Service-Account",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-GroupManagedServiceAccount)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Group-Managed-Service-Account,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-KeyCredential",
+        "defaultObjectCategory":  "CN=ms-DS-Key-Credential,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.297",
+        "adminDisplayName":  "msDS-KeyCredential",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-KeyCredential)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Key-Credential,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-ManagedServiceAccount",
+        "defaultObjectCategory":  "CN=ms-DS-Managed-Service-Account,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "computer",
+        "governsID":  "1.2.840.113556.1.5.264",
+        "adminDisplayName":  "ms-DS-Managed-Service-Account",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-ManagedServiceAccount)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Managed-Service-Account,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-OptionalFeature",
+        "defaultObjectCategory":  "CN=ms-DS-Optional-Feature,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.265",
+        "adminDisplayName":  "ms-DS-Optional-Feature",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-OptionalFeature)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Optional-Feature,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-PasswordSettings",
+        "defaultObjectCategory":  "CN=ms-DS-Password-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.255",
+        "adminDisplayName":  "ms-DS-Password-Settings",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-PasswordSettings)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Password-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-PasswordSettingsContainer",
+        "defaultObjectCategory":  "CN=ms-DS-Password-Settings-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.256",
+        "adminDisplayName":  "ms-DS-Password-Settings-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-PasswordSettingsContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Password-Settings-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-QuotaContainer",
+        "defaultObjectCategory":  "CN=ms-DS-Quota-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.242",
+        "adminDisplayName":  "ms-DS-Quota-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-QuotaContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Quota-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-QuotaControl",
+        "defaultObjectCategory":  "CN=ms-DS-Quota-Control,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.243",
+        "adminDisplayName":  "ms-DS-Quota-Control",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-QuotaControl)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Quota-Control,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-ResourceProperties",
+        "defaultObjectCategory":  "CN=ms-DS-Resource-Properties,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.271",
+        "adminDisplayName":  "ms-DS-Resource-Properties",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-ResourceProperties)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Resource-Properties,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-ResourceProperty",
+        "defaultObjectCategory":  "CN=ms-DS-Resource-Property,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "msDS-ClaimTypePropertyBase",
+        "governsID":  "1.2.840.113556.1.5.273",
+        "adminDisplayName":  "ms-DS-Resource-Property",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-ResourceProperty)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Resource-Property,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-ResourcePropertyList",
+        "defaultObjectCategory":  "CN=ms-DS-Resource-Property-List,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.274",
+        "adminDisplayName":  "ms-DS-Resource-Property-List",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-ResourcePropertyList)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Resource-Property-List,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-ShadowPrincipal",
+        "defaultObjectCategory":  "CN=ms-DS-Shadow-Principal,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.299",
+        "adminDisplayName":  "ms-DS-Shadow-Principal",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-ShadowPrincipal)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Shadow-Principal,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-ShadowPrincipalContainer",
+        "defaultObjectCategory":  "CN=ms-DS-Shadow-Principal-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "container",
+        "governsID":  "1.2.840.113556.1.5.298",
+        "adminDisplayName":  "ms-DS-Shadow-Principal-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-ShadowPrincipalContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Shadow-Principal-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msDS-ValueType",
+        "defaultObjectCategory":  "CN=ms-DS-Value-Type,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.279",
+        "adminDisplayName":  "ms-DS-Value-Type",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msDS-ValueType)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-DS-Value-Type,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msExchConfigurationContainer",
+        "defaultObjectCategory":  "CN=ms-Exch-Configuration-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "container",
+        "governsID":  "1.2.840.113556.1.5.176",
+        "adminDisplayName":  "ms-Exch-Configuration-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msExchConfigurationContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-Exch-Configuration-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msFVE-RecoveryInformation",
+        "defaultObjectCategory":  "CN=ms-FVE-RecoveryInformation,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.253",
+        "adminDisplayName":  "FVE-RecoveryInformation",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msFVE-RecoveryInformation)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-FVE-RecoveryInformation,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msieee80211-Policy",
+        "defaultObjectCategory":  "CN=ms-ieee-80211-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.240",
+        "adminDisplayName":  "ms-ieee-80211-Policy",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msieee80211-Policy)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-ieee-80211-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msImaging-PostScanProcess",
+        "defaultObjectCategory":  "CN=ms-Imaging-PostScanProcess,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.263",
+        "adminDisplayName":  "ms-Imaging-PostScanProcess",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msImaging-PostScanProcess)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-Imaging-PostScanProcess,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msImaging-PSPs",
+        "defaultObjectCategory":  "CN=ms-Imaging-PSPs,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "container",
+        "governsID":  "1.2.840.113556.1.5.262",
+        "adminDisplayName":  "ms-Imaging-PSPs",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msImaging-PSPs)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-Imaging-PSPs,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msKds-ProvRootKey",
+        "defaultObjectCategory":  "CN=ms-Kds-Prov-RootKey,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.278",
+        "adminDisplayName":  "ms-Kds-Prov-RootKey",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msKds-ProvRootKey)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-Kds-Prov-RootKey,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msKds-ProvServerConfiguration",
+        "defaultObjectCategory":  "CN=ms-Kds-Prov-ServerConfiguration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.277",
+        "adminDisplayName":  "ms-Kds-Prov-ServerConfiguration",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msKds-ProvServerConfiguration)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-Kds-Prov-ServerConfiguration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mSMQConfiguration",
+        "defaultObjectCategory":  "CN=MSMQ-Configuration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.162",
+        "adminDisplayName":  "MSMQ-Configuration",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mSMQConfiguration)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MSMQ-Configuration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msMQ-Custom-Recipient",
+        "defaultObjectCategory":  "CN=MSMQ-Custom-Recipient,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.218",
+        "adminDisplayName":  "MSMQ-Custom-Recipient",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msMQ-Custom-Recipient)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MSMQ-Custom-Recipient,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mSMQEnterpriseSettings",
+        "defaultObjectCategory":  "CN=MSMQ-Enterprise-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.163",
+        "adminDisplayName":  "MSMQ-Enterprise-Settings",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mSMQEnterpriseSettings)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MSMQ-Enterprise-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msMQ-Group",
+        "defaultObjectCategory":  "CN=MSMQ-Group,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.219",
+        "adminDisplayName":  "MSMQ-Group",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msMQ-Group)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MSMQ-Group,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mSMQMigratedUser",
+        "defaultObjectCategory":  "CN=MSMQ-Migrated-User,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.179",
+        "adminDisplayName":  "MSMQ-Migrated-User",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mSMQMigratedUser)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MSMQ-Migrated-User,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mSMQQueue",
+        "defaultObjectCategory":  "CN=MSMQ-Queue,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.161",
+        "adminDisplayName":  "MSMQ-Queue",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mSMQQueue)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MSMQ-Queue,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mSMQSettings",
+        "defaultObjectCategory":  "CN=MSMQ-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.165",
+        "adminDisplayName":  "MSMQ-Settings",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mSMQSettings)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MSMQ-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mSMQSiteLink",
+        "defaultObjectCategory":  "CN=MSMQ-Site-Link,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.164",
+        "adminDisplayName":  "MSMQ-Site-Link",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mSMQSiteLink)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MSMQ-Site-Link,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "ms-net-ieee-80211-GroupPolicy",
+        "defaultObjectCategory":  "CN=ms-net-ieee-80211-GroupPolicy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.251",
+        "adminDisplayName":  "ms-net-ieee-80211-GroupPolicy",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=ms-net-ieee-80211-GroupPolicy)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-net-ieee-80211-GroupPolicy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "ms-net-ieee-8023-GroupPolicy",
+        "defaultObjectCategory":  "CN=ms-net-ieee-8023-GroupPolicy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.252",
+        "adminDisplayName":  "ms-net-ieee-8023-GroupPolicy",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=ms-net-ieee-8023-GroupPolicy)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-net-ieee-8023-GroupPolicy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msPKI-Enterprise-Oid",
+        "defaultObjectCategory":  "CN=ms-PKI-Enterprise-Oid,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.196",
+        "adminDisplayName":  "ms-PKI-Enterprise-Oid",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msPKI-Enterprise-Oid)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-PKI-Enterprise-Oid,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msPKI-Key-Recovery-Agent",
+        "defaultObjectCategory":  "CN=ms-PKI-Key-Recovery-Agent,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "user",
+        "governsID":  "1.2.840.113556.1.5.195",
+        "adminDisplayName":  "ms-PKI-Key-Recovery-Agent",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msPKI-Key-Recovery-Agent)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-PKI-Key-Recovery-Agent,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msPKI-PrivateKeyRecoveryAgent",
+        "defaultObjectCategory":  "CN=ms-PKI-Private-Key-Recovery-Agent,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.223",
+        "adminDisplayName":  "ms-PKI-Private-Key-Recovery-Agent",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msPKI-PrivateKeyRecoveryAgent)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-PKI-Private-Key-Recovery-Agent,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msPrint-ConnectionPolicy",
+        "defaultObjectCategory":  "CN=ms-Print-ConnectionPolicy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.23.2",
+        "adminDisplayName":  "ms-Print-ConnectionPolicy",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msPrint-ConnectionPolicy)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-Print-ConnectionPolicy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msSFU30DomainInfo",
+        "defaultObjectCategory":  "CN=msSFU-30-Domain-Info,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.18.2.215",
+        "adminDisplayName":  "msSFU-30-Domain-Info",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msSFU30DomainInfo)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=msSFU-30-Domain-Info,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msSFU30MailAliases",
+        "defaultObjectCategory":  "CN=msSFU-30-Mail-Aliases,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.18.2.211",
+        "adminDisplayName":  "msSFU-30-Mail-Aliases",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msSFU30MailAliases)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=msSFU-30-Mail-Aliases,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msSFU30NetId",
+        "defaultObjectCategory":  "CN=msSFU-30-Net-Id,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.18.2.212",
+        "adminDisplayName":  "msSFU-30-Net-Id",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msSFU30NetId)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=msSFU-30-Net-Id,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msSFU30NetworkUser",
+        "defaultObjectCategory":  "CN=msSFU-30-Network-User,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.18.2.216",
+        "adminDisplayName":  "msSFU-30-Network-User",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msSFU30NetworkUser)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=msSFU-30-Network-User,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msSFU30NISMapConfig",
+        "defaultObjectCategory":  "CN=msSFU-30-NIS-Map-Config,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.18.2.217",
+        "adminDisplayName":  "msSFU-30-NIS-Map-Config",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msSFU30NISMapConfig)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=msSFU-30-NIS-Map-Config,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mSSMSManagementPoint",
+        "defaultObjectCategory":  "CN=MS-SMS-Management-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "serviceConnectionPoint",
+        "governsID":  "1.2.840.113556.1.6.29.2.2.1",
+        "adminDisplayName":  "MS-SMS-Management-Point",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mSSMSManagementPoint)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MS-SMS-Management-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mSSMSRoamingBoundaryRange",
+        "defaultObjectCategory":  "CN=MS-SMS-Roaming-Boundary-Range,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.29.2.2.4",
+        "adminDisplayName":  "MS-SMS-Roaming-Boundary-Range",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mSSMSRoamingBoundaryRange)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MS-SMS-Roaming-Boundary-Range,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mSSMSServerLocatorPoint",
+        "defaultObjectCategory":  "CN=MS-SMS-Server-Locator-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "serviceConnectionPoint",
+        "governsID":  "1.2.840.113556.1.6.29.2.2.3",
+        "adminDisplayName":  "MS-SMS-Server-Locator-Point",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mSSMSServerLocatorPoint)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MS-SMS-Server-Locator-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mSSMSSite",
+        "defaultObjectCategory":  "CN=MS-SMS-Site,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.6.29.2.2.2",
+        "adminDisplayName":  "MS-SMS-Site",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mSSMSSite)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MS-SMS-Site,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msSPP-ActivationObject",
+        "defaultObjectCategory":  "CN=ms-SPP-Activation-Object,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.267",
+        "adminDisplayName":  "ms-SPP-Activation-Object",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msSPP-ActivationObject)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-SPP-Activation-Object,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msSPP-ActivationObjectsContainer",
+        "defaultObjectCategory":  "CN=ms-SPP-Activation-Objects-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.266",
+        "adminDisplayName":  "ms-SPP-Activation-Objects-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msSPP-ActivationObjectsContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-SPP-Activation-Objects-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mS-SQL-OLAPCube",
+        "defaultObjectCategory":  "CN=MS-SQL-OLAPCube,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.190",
+        "adminDisplayName":  "MS-SQL-OLAPCube",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mS-SQL-OLAPCube)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MS-SQL-OLAPCube,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mS-SQL-OLAPDatabase",
+        "defaultObjectCategory":  "CN=MS-SQL-OLAPDatabase,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.189",
+        "adminDisplayName":  "MS-SQL-OLAPDatabase",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mS-SQL-OLAPDatabase)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MS-SQL-OLAPDatabase,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mS-SQL-OLAPServer",
+        "defaultObjectCategory":  "CN=MS-SQL-OLAPServer,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "serviceConnectionPoint",
+        "governsID":  "1.2.840.113556.1.5.185",
+        "adminDisplayName":  "MS-SQL-OLAPServer",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mS-SQL-OLAPServer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MS-SQL-OLAPServer,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mS-SQL-SQLDatabase",
+        "defaultObjectCategory":  "CN=MS-SQL-SQLDatabase,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.188",
+        "adminDisplayName":  "MS-SQL-SQLDatabase",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mS-SQL-SQLDatabase)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MS-SQL-SQLDatabase,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mS-SQL-SQLPublication",
+        "defaultObjectCategory":  "CN=MS-SQL-SQLPublication,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.187",
+        "adminDisplayName":  "MS-SQL-SQLPublication",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mS-SQL-SQLPublication)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MS-SQL-SQLPublication,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mS-SQL-SQLRepository",
+        "defaultObjectCategory":  "CN=MS-SQL-SQLRepository,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.186",
+        "adminDisplayName":  "MS-SQL-SQLRepository",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mS-SQL-SQLRepository)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MS-SQL-SQLRepository,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "mS-SQL-SQLServer",
+        "defaultObjectCategory":  "CN=MS-SQL-SQLServer,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "serviceConnectionPoint",
+        "governsID":  "1.2.840.113556.1.5.184",
+        "adminDisplayName":  "MS-SQL-SQLServer",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=mS-SQL-SQLServer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=MS-SQL-SQLServer,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msTAPI-RtConference",
+        "defaultObjectCategory":  "CN=ms-TAPI-Rt-Conference,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.221",
+        "adminDisplayName":  "msTAPI-RtConference",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msTAPI-RtConference)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-TAPI-Rt-Conference,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msTAPI-RtPerson",
+        "defaultObjectCategory":  "CN=ms-TAPI-Rt-Person,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.222",
+        "adminDisplayName":  "msTAPI-RtPerson",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msTAPI-RtPerson)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-TAPI-Rt-Person,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msTPM-InformationObject",
+        "defaultObjectCategory":  "CN=ms-TPM-Information-Object,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.275",
+        "adminDisplayName":  "TPM-InformationObject",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msTPM-InformationObject)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-TPM-Information-Object,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msTPM-InformationObjectsContainer",
+        "defaultObjectCategory":  "CN=ms-TPM-Information-Objects-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.276",
+        "adminDisplayName":  "TPM-InformationObjectsContainer",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msTPM-InformationObjectsContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-TPM-Information-Objects-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-IntRangeParam",
+        "defaultObjectCategory":  "CN=ms-WMI-IntRangeParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "msWMI-RangeParam",
+        "governsID":  "1.2.840.113556.1.5.205",
+        "adminDisplayName":  "ms-WMI-IntRangeParam",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-IntRangeParam)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-IntRangeParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-IntSetParam",
+        "defaultObjectCategory":  "CN=ms-WMI-IntSetParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "msWMI-RangeParam",
+        "governsID":  "1.2.840.113556.1.5.206",
+        "adminDisplayName":  "ms-WMI-IntSetParam",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-IntSetParam)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-IntSetParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-MergeablePolicyTemplate",
+        "defaultObjectCategory":  "CN=ms-WMI-MergeablePolicyTemplate,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "msWMI-PolicyTemplate",
+        "governsID":  "1.2.840.113556.1.5.202",
+        "adminDisplayName":  "ms-WMI-MergeablePolicyTemplate",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-MergeablePolicyTemplate)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-MergeablePolicyTemplate,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-ObjectEncoding",
+        "defaultObjectCategory":  "CN=ms-WMI-ObjectEncoding,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.217",
+        "adminDisplayName":  "ms-WMI-ObjectEncoding",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-ObjectEncoding)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-ObjectEncoding,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-PolicyTemplate",
+        "defaultObjectCategory":  "CN=ms-WMI-PolicyTemplate,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.200",
+        "adminDisplayName":  "ms-WMI-PolicyTemplate",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-PolicyTemplate)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-PolicyTemplate,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-PolicyType",
+        "defaultObjectCategory":  "CN=ms-WMI-PolicyType,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.211",
+        "adminDisplayName":  "ms-WMI-PolicyType",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-PolicyType)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-PolicyType,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-RangeParam",
+        "defaultObjectCategory":  "CN=ms-WMI-RangeParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.203",
+        "adminDisplayName":  "ms-WMI-RangeParam",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-RangeParam)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-RangeParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-RealRangeParam",
+        "defaultObjectCategory":  "CN=ms-WMI-RealRangeParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "msWMI-RangeParam",
+        "governsID":  "1.2.840.113556.1.5.209",
+        "adminDisplayName":  "ms-WMI-RealRangeParam",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-RealRangeParam)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-RealRangeParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-Rule",
+        "defaultObjectCategory":  "CN=ms-WMI-Rule,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.214",
+        "adminDisplayName":  "ms-WMI-Rule",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-Rule)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-Rule,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-ShadowObject",
+        "defaultObjectCategory":  "CN=ms-WMI-ShadowObject,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.212",
+        "adminDisplayName":  "ms-WMI-ShadowObject",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-ShadowObject)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-ShadowObject,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-SimplePolicyTemplate",
+        "defaultObjectCategory":  "CN=ms-WMI-SimplePolicyTemplate,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "msWMI-PolicyTemplate",
+        "governsID":  "1.2.840.113556.1.5.201",
+        "adminDisplayName":  "ms-WMI-SimplePolicyTemplate",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-SimplePolicyTemplate)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-SimplePolicyTemplate,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-Som",
+        "defaultObjectCategory":  "CN=ms-WMI-Som,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.213",
+        "adminDisplayName":  "ms-WMI-Som",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-Som)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-Som,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-StringSetParam",
+        "defaultObjectCategory":  "CN=ms-WMI-StringSetParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "msWMI-RangeParam",
+        "governsID":  "1.2.840.113556.1.5.210",
+        "adminDisplayName":  "ms-WMI-StringSetParam",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-StringSetParam)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-StringSetParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-UintRangeParam",
+        "defaultObjectCategory":  "CN=ms-WMI-UintRangeParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "msWMI-RangeParam",
+        "governsID":  "1.2.840.113556.1.5.207",
+        "adminDisplayName":  "ms-WMI-UintRangeParam",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-UintRangeParam)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-UintRangeParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-UintSetParam",
+        "defaultObjectCategory":  "CN=ms-WMI-UintSetParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "msWMI-RangeParam",
+        "governsID":  "1.2.840.113556.1.5.208",
+        "adminDisplayName":  "ms-WMI-UintSetParam",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-UintSetParam)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-UintSetParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-UnknownRangeParam",
+        "defaultObjectCategory":  "CN=ms-WMI-UnknownRangeParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "msWMI-RangeParam",
+        "governsID":  "1.2.840.113556.1.5.204",
+        "adminDisplayName":  "ms-WMI-UnknownRangeParam",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-UnknownRangeParam)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-UnknownRangeParam,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "msWMI-WMIGPO",
+        "defaultObjectCategory":  "CN=ms-WMI-WMIGPO,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.215",
+        "adminDisplayName":  "ms-WMI-WMIGPO",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=msWMI-WMIGPO)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ms-WMI-WMIGPO,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "nisMap",
+        "defaultObjectCategory":  "CN=NisMap,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.3.6.1.1.1.2.9",
+        "adminDisplayName":  "nisMap",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=nisMap)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=NisMap,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "nisNetgroup",
+        "defaultObjectCategory":  "CN=NisNetgroup,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.3.6.1.1.1.2.8",
+        "adminDisplayName":  "nisNetgroup",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=nisNetgroup)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=NisNetgroup,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "nisObject",
+        "defaultObjectCategory":  "CN=NisObject,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.3.6.1.1.1.2.10",
+        "adminDisplayName":  "nisObject",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=nisObject)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=NisObject,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "nTDSConnection",
+        "defaultObjectCategory":  "CN=NTDS-Connection,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "leaf",
+        "governsID":  "1.2.840.113556.1.5.71",
+        "adminDisplayName":  "NTDS-Connection",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=nTDSConnection)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=NTDS-Connection,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "nTDSDSA",
+        "defaultObjectCategory":  "CN=NTDS-DSA,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "applicationSettings",
+        "governsID":  "1.2.840.113556.1.5.7000.47",
+        "adminDisplayName":  "NTDS-DSA",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=nTDSDSA)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=NTDS-DSA,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "nTDSDSARO",
+        "defaultObjectCategory":  "CN=NTDS-DSA-RO,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "nTDSDSA",
+        "governsID":  "1.2.840.113556.1.5.254",
+        "adminDisplayName":  "NTDS-DSA-RO",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=nTDSDSARO)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=NTDS-DSA-RO,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "nTDSService",
+        "defaultObjectCategory":  "CN=NTDS-Service,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.72",
+        "adminDisplayName":  "NTDS-Service",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=nTDSService)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=NTDS-Service,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "nTDSSiteSettings",
+        "defaultObjectCategory":  "CN=NTDS-Site-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "applicationSiteSettings",
+        "governsID":  "1.2.840.113556.1.5.69",
+        "adminDisplayName":  "NTDS-Site-Settings",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=nTDSSiteSettings)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=NTDS-Site-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "nTFRSMember",
+        "defaultObjectCategory":  "CN=NTFRS-Member,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.153",
+        "adminDisplayName":  "NTFRS-Member",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=nTFRSMember)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=NTFRS-Member,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "nTFRSReplicaSet",
+        "defaultObjectCategory":  "CN=NTFRS-Replica-Set,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.102",
+        "adminDisplayName":  "NTFRS-Replica-Set",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=nTFRSReplicaSet)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=NTFRS-Replica-Set,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "nTFRSSettings",
+        "defaultObjectCategory":  "CN=NTFRS-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "applicationSettings",
+        "governsID":  "1.2.840.113556.1.5.89",
+        "adminDisplayName":  "NTFRS-Settings",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=nTFRSSettings)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=NTFRS-Settings,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "nTFRSSubscriber",
+        "defaultObjectCategory":  "CN=NTFRS-Subscriber,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.155",
+        "adminDisplayName":  "NTFRS-Subscriber",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=nTFRSSubscriber)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=NTFRS-Subscriber,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "nTFRSSubscriptions",
+        "defaultObjectCategory":  "CN=NTFRS-Subscriptions,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.154",
+        "adminDisplayName":  "NTFRS-Subscriptions",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=nTFRSSubscriptions)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=NTFRS-Subscriptions,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "oncRpc",
+        "defaultObjectCategory":  "CN=OncRpc,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.3.6.1.1.1.2.5",
+        "adminDisplayName":  "oncRpc",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=oncRpc)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=OncRpc,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "organization",
+        "defaultObjectCategory":  "CN=Organization,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "2.5.6.4",
+        "adminDisplayName":  "Organization",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=organization)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Organization,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "organizationalPerson",
+        "defaultObjectCategory":  "CN=Person,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "person",
+        "governsID":  "2.5.6.7",
+        "adminDisplayName":  "Organizational-Person",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=organizationalPerson)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Person,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "organizationalRole",
+        "defaultObjectCategory":  "CN=Organizational-Role,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "2.5.6.8",
+        "adminDisplayName":  "Organizational-Role",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=organizationalRole)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Organizational-Role,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "organizationalUnit",
+        "defaultObjectCategory":  "CN=Organizational-Unit,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "2.5.6.5",
+        "adminDisplayName":  "Organizational-Unit",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=organizationalUnit)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Organizational-Unit,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "packageRegistration",
+        "defaultObjectCategory":  "CN=Package-Registration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.49",
+        "adminDisplayName":  "Package-Registration",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=packageRegistration)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Package-Registration,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "person",
+        "defaultObjectCategory":  "CN=Person,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "2.5.6.6",
+        "adminDisplayName":  "Person",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=person)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Person,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "physicalLocation",
+        "defaultObjectCategory":  "CN=Physical-Location,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "locality",
+        "governsID":  "1.2.840.113556.1.5.97",
+        "adminDisplayName":  "Physical-Location",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=physicalLocation)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Physical-Location,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "pKICertificateTemplate",
+        "defaultObjectCategory":  "CN=PKI-Certificate-Template,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.177",
+        "adminDisplayName":  "PKI-Certificate-Template",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=pKICertificateTemplate)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=PKI-Certificate-Template,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "pKIEnrollmentService",
+        "defaultObjectCategory":  "CN=PKI-Enrollment-Service,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.178",
+        "adminDisplayName":  "PKI-Enrollment-Service",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=pKIEnrollmentService)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=PKI-Enrollment-Service,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "posixAccount",
+        "defaultObjectCategory":  "CN=PosixAccount,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.3.6.1.1.1.2.0",
+        "adminDisplayName":  "posixAccount",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=posixAccount)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=PosixAccount,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "posixGroup",
+        "defaultObjectCategory":  "CN=PosixGroup,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.3.6.1.1.1.2.2",
+        "adminDisplayName":  "posixGroup",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=posixGroup)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=PosixGroup,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "printQueue",
+        "defaultObjectCategory":  "CN=Print-Queue,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "connectionPoint",
+        "governsID":  "1.2.840.113556.1.5.23",
+        "adminDisplayName":  "Print-Queue",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=printQueue)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Print-Queue,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "queryPolicy",
+        "defaultObjectCategory":  "CN=Query-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.106",
+        "adminDisplayName":  "Query-Policy",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=queryPolicy)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Query-Policy,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "remoteMailRecipient",
+        "defaultObjectCategory":  "CN=Remote-Mail-Recipient,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.24",
+        "adminDisplayName":  "Remote-Mail-Recipient",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=remoteMailRecipient)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Remote-Mail-Recipient,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "remoteStorageServicePoint",
+        "defaultObjectCategory":  "CN=Remote-Storage-Service-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "serviceAdministrationPoint",
+        "governsID":  "1.2.840.113556.1.5.146",
+        "adminDisplayName":  "Remote-Storage-Service-Point",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=remoteStorageServicePoint)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Remote-Storage-Service-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "residentialPerson",
+        "defaultObjectCategory":  "CN=Residential-Person,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "person",
+        "governsID":  "2.5.6.10",
+        "adminDisplayName":  "Residential-Person",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=residentialPerson)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Residential-Person,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "rFC822LocalPart",
+        "defaultObjectCategory":  "CN=rFC822LocalPart,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "domain",
+        "governsID":  "0.9.2342.19200300.100.4.14",
+        "adminDisplayName":  "rFC822LocalPart",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=rFC822LocalPart)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=rFC822LocalPart,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "rIDManager",
+        "defaultObjectCategory":  "CN=RID-Manager,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.83",
+        "adminDisplayName":  "RID-Manager",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=rIDManager)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=RID-Manager,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "rIDSet",
+        "defaultObjectCategory":  "CN=RID-Set,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.129",
+        "adminDisplayName":  "RID-Set",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=rIDSet)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=RID-Set,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "room",
+        "defaultObjectCategory":  "CN=room,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "0.9.2342.19200300.100.4.7",
+        "adminDisplayName":  "room",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=room)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=room,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "rpcContainer",
+        "defaultObjectCategory":  "CN=Rpc-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "container",
+        "governsID":  "1.2.840.113556.1.5.136",
+        "adminDisplayName":  "Rpc-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=rpcContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Rpc-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "rpcEntry",
+        "defaultObjectCategory":  "CN=rpc-Entry,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "connectionPoint",
+        "governsID":  "1.2.840.113556.1.5.27",
+        "adminDisplayName":  "rpc-Entry",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=rpcEntry)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=rpc-Entry,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "rpcGroup",
+        "defaultObjectCategory":  "CN=rpc-Group,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "rpcEntry",
+        "governsID":  "1.2.840.113556.1.5.80",
+        "adminDisplayName":  "rpc-Group",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=rpcGroup)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=rpc-Group,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "rpcProfile",
+        "defaultObjectCategory":  "CN=rpc-Profile,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "rpcEntry",
+        "governsID":  "1.2.840.113556.1.5.82",
+        "adminDisplayName":  "rpc-Profile",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=rpcProfile)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=rpc-Profile,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "rpcProfileElement",
+        "defaultObjectCategory":  "CN=rpc-Profile-Element,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "rpcEntry",
+        "governsID":  "1.2.840.113556.1.5.26",
+        "adminDisplayName":  "rpc-Profile-Element",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=rpcProfileElement)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=rpc-Profile-Element,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "rpcServer",
+        "defaultObjectCategory":  "CN=rpc-Server,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "rpcEntry",
+        "governsID":  "1.2.840.113556.1.5.81",
+        "adminDisplayName":  "rpc-Server",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=rpcServer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=rpc-Server,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "rpcServerElement",
+        "defaultObjectCategory":  "CN=rpc-Server-Element,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "rpcEntry",
+        "governsID":  "1.2.840.113556.1.5.73",
+        "adminDisplayName":  "rpc-Server-Element",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=rpcServerElement)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=rpc-Server-Element,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "rRASAdministrationConnectionPoint",
+        "defaultObjectCategory":  "CN=RRAS-Administration-Connection-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "serviceAdministrationPoint",
+        "governsID":  "1.2.840.113556.1.5.150",
+        "adminDisplayName":  "RRAS-Administration-Connection-Point",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=rRASAdministrationConnectionPoint)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=RRAS-Administration-Connection-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "rRASAdministrationDictionary",
+        "defaultObjectCategory":  "CN=RRAS-Administration-Dictionary,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.156",
+        "adminDisplayName":  "RRAS-Administration-Dictionary",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=rRASAdministrationDictionary)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=RRAS-Administration-Dictionary,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "samDomain",
+        "defaultObjectCategory":  "CN=Sam-Domain,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.3",
+        "adminDisplayName":  "Sam-Domain",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=samDomain)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Sam-Domain,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "samDomainBase",
+        "defaultObjectCategory":  "CN=Sam-Domain-Base,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.2",
+        "adminDisplayName":  "Sam-Domain-Base",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=samDomainBase)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Sam-Domain-Base,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "samServer",
+        "defaultObjectCategory":  "CN=Sam-Server,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "securityObject",
+        "governsID":  "1.2.840.113556.1.5.5",
+        "adminDisplayName":  "Sam-Server",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=samServer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Sam-Server,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "secret",
+        "defaultObjectCategory":  "CN=Secret,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "leaf",
+        "governsID":  "1.2.840.113556.1.5.28",
+        "adminDisplayName":  "Secret",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=secret)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Secret,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "securityObject",
+        "defaultObjectCategory":  "CN=Security-Object,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.1",
+        "adminDisplayName":  "Security-Object",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=securityObject)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Security-Object,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "securityPrincipal",
+        "defaultObjectCategory":  "CN=Security-Principal,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.6",
+        "adminDisplayName":  "Security-Principal",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=securityPrincipal)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Security-Principal,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "server",
+        "defaultObjectCategory":  "CN=Server,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.17",
+        "adminDisplayName":  "Server",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=server)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Server,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "serversContainer",
+        "defaultObjectCategory":  "CN=Servers-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.7000.48",
+        "adminDisplayName":  "Servers-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=serversContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Servers-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "serviceAdministrationPoint",
+        "defaultObjectCategory":  "CN=Service-Administration-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "serviceConnectionPoint",
+        "governsID":  "1.2.840.113556.1.5.94",
+        "adminDisplayName":  "Service-Administration-Point",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=serviceAdministrationPoint)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Service-Administration-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "serviceClass",
+        "defaultObjectCategory":  "CN=Service-Class,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "leaf",
+        "governsID":  "1.2.840.113556.1.5.29",
+        "adminDisplayName":  "Service-Class",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=serviceClass)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Service-Class,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "serviceConnectionPoint",
+        "defaultObjectCategory":  "CN=Service-Connection-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "connectionPoint",
+        "governsID":  "1.2.840.113556.1.5.126",
+        "adminDisplayName":  "Service-Connection-Point",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=serviceConnectionPoint)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Service-Connection-Point,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "serviceInstance",
+        "defaultObjectCategory":  "CN=Service-Instance,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "connectionPoint",
+        "governsID":  "1.2.840.113556.1.5.30",
+        "adminDisplayName":  "Service-Instance",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=serviceInstance)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Service-Instance,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "shadowAccount",
+        "defaultObjectCategory":  "CN=ShadowAccount,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.3.6.1.1.1.2.1",
+        "adminDisplayName":  "shadowAccount",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=shadowAccount)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=ShadowAccount,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "simpleSecurityObject",
+        "defaultObjectCategory":  "CN=simpleSecurityObject,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "0.9.2342.19200300.100.4.19",
+        "adminDisplayName":  "simpleSecurityObject",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=simpleSecurityObject)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=simpleSecurityObject,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "site",
+        "defaultObjectCategory":  "CN=Site,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.31",
+        "adminDisplayName":  "Site",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=site)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Site,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "siteLink",
+        "defaultObjectCategory":  "CN=Site-Link,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.147",
+        "adminDisplayName":  "Site-Link",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=siteLink)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Site-Link,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "siteLinkBridge",
+        "defaultObjectCategory":  "CN=Site-Link-Bridge,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.148",
+        "adminDisplayName":  "Site-Link-Bridge",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=siteLinkBridge)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Site-Link-Bridge,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "sitesContainer",
+        "defaultObjectCategory":  "CN=Sites-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.107",
+        "adminDisplayName":  "Sites-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=sitesContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Sites-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "storage",
+        "defaultObjectCategory":  "CN=Storage,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "connectionPoint",
+        "governsID":  "1.2.840.113556.1.5.33",
+        "adminDisplayName":  "Storage",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=storage)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Storage,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "subnet",
+        "defaultObjectCategory":  "CN=Subnet,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.96",
+        "adminDisplayName":  "Subnet",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=subnet)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Subnet,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "subnetContainer",
+        "defaultObjectCategory":  "CN=Subnet-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.95",
+        "adminDisplayName":  "Subnet-Container",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=subnetContainer)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Subnet-Container,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "subSchema",
+        "defaultObjectCategory":  "CN=SubSchema,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "2.5.20.1",
+        "adminDisplayName":  "SubSchema",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=subSchema)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=SubSchema,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "top",
+        "defaultObjectCategory":  "CN=Top,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "2.5.6.0",
+        "adminDisplayName":  "Top",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=top)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Top,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "trustedDomain",
+        "defaultObjectCategory":  "CN=Trusted-Domain,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "leaf",
+        "governsID":  "1.2.840.113556.1.5.34",
+        "adminDisplayName":  "Trusted-Domain",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=trustedDomain)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Trusted-Domain,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "typeLibrary",
+        "defaultObjectCategory":  "CN=Type-Library,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "top",
+        "governsID":  "1.2.840.113556.1.5.53",
+        "adminDisplayName":  "Type-Library",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=typeLibrary)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Type-Library,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "user",
+        "defaultObjectCategory":  "CN=Person,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "organizationalPerson",
+        "governsID":  "1.2.840.113556.1.5.9",
+        "adminDisplayName":  "User",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=user)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Person,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    },
+    {
+        "lDAPDisplayName":  "volume",
+        "defaultObjectCategory":  "CN=Volume,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com",
+        "subClassOf":  "connectionPoint",
+        "governsID":  "1.2.840.113556.1.5.36",
+        "adminDisplayName":  "Volume",
+        "description":  null,
+        "LDAPFilterExample":  "(objectCategory=volume)",
+        "RawDefaultObjectCategoryFilter":  "(objectCategory=CN=Volume,CN=Schema,CN=Configuration,DC=corp,DC=contoso,DC=com)"
+    }
+]
