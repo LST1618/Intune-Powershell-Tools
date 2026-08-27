@@ -13,6 +13,7 @@ Creates:
 Run as Domain Admin or delegated account with rights to create objects.
 Requires: ActiveDirectory module
 Recommended: run only in a lab / training domain
+This version without Exchange attributes
 #>
 
 [CmdletBinding()]
@@ -66,11 +67,6 @@ function Ensure-Group {
         Write-Log "Created group: $Name"
     }
 }
-
-#function Get-Random {
-    #param([array]$Items)
-    #return $Items | Get-Random
-#}
 
 function Get-UniqueSam {
     param(
@@ -210,8 +206,7 @@ $firstNames = @(
     "Dawid","Dominik","Ewa","Filip","Grzegorz","Hubert","Iga","Izabela","Jakub","Jan","Joanna","Kacper","Karol",
     "Katarzyna","Konrad","Krzysztof","Laura","Lena","Lukasz","Magda","Maja","Marek","Marcin","Mateusz","Michal",
     "Monika","Natalia","Nikodem","Olga","Patryk","Pawel","Piotr","Rafal","Sandra","Sebastian","Sylwia","Tomasz",
-    "Weronika","Wiktor","Zofia",
-    "Alicja","Antoni","Barbara","Blazej","Bogdan","Bozena","Celina","Cyprian","Dariusz","Dorota","Edyta","Emilia",
+    "Weronika","Wiktor","Zofia","Alicja","Antoni","Barbara","Blazej","Bogdan","Bozena","Celina","Cyprian","Dariusz","Dorota","Edyta","Emilia",
     "Eryk","Fabian","Felicja","Gabriel","Genowefa","Gustaw","Halina","Henryk","Ida","Ignacy","Irena","Ireneusz",
     "Jadwiga","Jaroslaw","Jerzy","Julia","Julian","Justyna","Kamil","Kamila","Karolina","Klara","Klaudia","Krystian",
     "Krystyna","Ksawery","Leon","Leszek","Liwia","Lidia","Malgorzata","Marta","Marian","Mariusz","Marzena","Mikolaj",
