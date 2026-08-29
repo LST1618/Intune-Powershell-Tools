@@ -1,0 +1,291 @@
+{
+  "DomainFqdn": "contoso.com",
+  "Server": "dc01.contoso.com",
+  "CreateMissingWmiFilters": true,
+  "RemoveAuthenticatedUsersApply": false,
+  "Gpos": [
+    {
+      "Name": "Baseline - Domain Password Policy",
+      "Comment": "Reference placeholder for domain account policy; review against Default Domain Policy before using.",
+      "Status": "AllSettingsEnabled",
+      "SecurityFiltering": [
+        { "TargetName": "Authenticated Users", "TargetType": "Group", "PermissionLevel": "GpoRead" }
+      ],
+      "Links": [
+        { "Target": "DC=contoso,DC=com", "Enabled": true, "Enforced": true, "Order": 1 }
+      ]
+    },
+    {
+      "Name": "Baseline - Workstations Core",
+      "Comment": "Core workstation baseline.",
+      "Status": "AllSettingsEnabled",
+      "WmiFilter": {
+        "Name": "Windows 10 and 11 Workstations",
+        "Description": "Targets client OS only",
+        "Query": "SELECT * FROM Win32_OperatingSystem WHERE ProductType = '1'"
+      },
+      "SecurityFiltering": [
+        { "TargetName": "GG-GPO-Workstations", "TargetType": "Group", "PermissionLevel": "GpoApply" }
+      ],
+      "RegistryPolicies": [
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\Windows\\Explorer", "ValueName": "NoAutoplayfornonVolume", "Type": "DWord", "Value": 1 },
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\Windows\\System", "ValueName": "EnableSmartScreen", "Type": "DWord", "Value": 1 }
+      ],
+      "Links": [
+        { "Target": "OU=Workstations,DC=contoso,DC=com", "Enabled": true, "Enforced": false, "Order": 1 }
+      ]
+    },
+    {
+      "Name": "Baseline - Workstations Firewall",
+      "Comment": "Windows Defender Firewall baseline.",
+      "Status": "AllSettingsEnabled",
+      "WmiFilter": {
+        "Name": "Windows 10 and 11 Workstations",
+        "Description": "Targets client OS only",
+        "Query": "SELECT * FROM Win32_OperatingSystem WHERE ProductType = '1'"
+      },
+      "SecurityFiltering": [
+        { "TargetName": "GG-GPO-Workstations", "TargetType": "Group", "PermissionLevel": "GpoApply" }
+      ],
+      "RegistryPolicies": [
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile", "ValueName": "EnableFirewall", "Type": "DWord", "Value": 1 },
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\WindowsFirewall\\StandardProfile", "ValueName": "EnableFirewall", "Type": "DWord", "Value": 1 }
+      ],
+      "Links": [
+        { "Target": "OU=Workstations,DC=contoso,DC=com", "Enabled": true, "Enforced": false, "Order": 2 }
+      ]
+    },
+    {
+      "Name": "Baseline - Workstations BitLocker",
+      "Comment": "BitLocker workstation policy placeholder.",
+      "Status": "AllSettingsEnabled",
+      "WmiFilter": {
+        "Name": "Windows 10 and 11 Workstations",
+        "Description": "Targets client OS only",
+        "Query": "SELECT * FROM Win32_OperatingSystem WHERE ProductType = '1'"
+      },
+      "SecurityFiltering": [
+        { "TargetName": "GG-GPO-Workstations", "TargetType": "Group", "PermissionLevel": "GpoApply" }
+      ],
+      "RegistryPolicies": [
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\FVE", "ValueName": "UseAdvancedStartup", "Type": "DWord", "Value": 1 }
+      ],
+      "Links": [
+        { "Target": "OU=Workstations,DC=contoso,DC=com", "Enabled": true, "Enforced": false, "Order": 3 }
+      ]
+    },
+    {
+      "Name": "Baseline - Workstations Windows Update",
+      "Comment": "Windows Update for Business style workstation baseline.",
+      "Status": "AllSettingsEnabled",
+      "WmiFilter": {
+        "Name": "Windows 10 and 11 Workstations",
+        "Description": "Targets client OS only",
+        "Query": "SELECT * FROM Win32_OperatingSystem WHERE ProductType = '1'"
+      },
+      "SecurityFiltering": [
+        { "TargetName": "GG-GPO-Workstations", "TargetType": "Group", "PermissionLevel": "GpoApply" }
+      ],
+      "RegistryPolicies": [
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU", "ValueName": "NoAutoUpdate", "Type": "DWord", "Value": 0 },
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU", "ValueName": "AUOptions", "Type": "DWord", "Value": 4 }
+      ],
+      "Links": [
+        { "Target": "OU=Workstations,DC=contoso,DC=com", "Enabled": true, "Enforced": false, "Order": 4 }
+      ]
+    },
+    {
+      "Name": "Baseline - Workstations Defender Antivirus",
+      "Comment": "Microsoft Defender Antivirus baseline.",
+      "Status": "AllSettingsEnabled",
+      "WmiFilter": {
+        "Name": "Windows 10 and 11 Workstations",
+        "Description": "Targets client OS only",
+        "Query": "SELECT * FROM Win32_OperatingSystem WHERE ProductType = '1'"
+      },
+      "SecurityFiltering": [
+        { "TargetName": "GG-GPO-Workstations", "TargetType": "Group", "PermissionLevel": "GpoApply" }
+      ],
+      "RegistryPolicies": [
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\Windows Defender", "ValueName": "DisableAntiSpyware", "Type": "DWord", "Value": 0 },
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\Windows Defender\\Real-Time Protection", "ValueName": "DisableRealtimeMonitoring", "Type": "DWord", "Value": 0 }
+      ],
+      "Links": [
+        { "Target": "OU=Workstations,DC=contoso,DC=com", "Enabled": true, "Enforced": false, "Order": 5 }
+      ]
+    },
+    {
+      "Name": "Baseline - Workstations LAPS",
+      "Comment": "Windows LAPS baseline for workstations.",
+      "Status": "AllSettingsEnabled",
+      "WmiFilter": {
+        "Name": "Windows 10 and 11 Workstations",
+        "Description": "Targets client OS only",
+        "Query": "SELECT * FROM Win32_OperatingSystem WHERE ProductType = '1'"
+      },
+      "SecurityFiltering": [
+        { "TargetName": "GG-GPO-Workstations", "TargetType": "Group", "PermissionLevel": "GpoApply" }
+      ],
+      "RegistryPolicies": [
+        { "Context": "Computer", "Key": "HKLM\\Software\\Microsoft\\Policies\\LAPS", "ValueName": "BackupDirectory", "Type": "DWord", "Value": 2 },
+        { "Context": "Computer", "Key": "HKLM\\Software\\Microsoft\\Policies\\LAPS", "ValueName": "PasswordLength", "Type": "DWord", "Value": 14 }
+      ],
+      "Links": [
+        { "Target": "OU=Workstations,DC=contoso,DC=com", "Enabled": true, "Enforced": false, "Order": 6 }
+      ]
+    },
+    {
+      "Name": "Baseline - Workstations Edge",
+      "Comment": "Microsoft Edge security baseline placeholder.",
+      "Status": "AllSettingsEnabled",
+      "WmiFilter": {
+        "Name": "Windows 10 and 11 Workstations",
+        "Description": "Targets client OS only",
+        "Query": "SELECT * FROM Win32_OperatingSystem WHERE ProductType = '1'"
+      },
+      "SecurityFiltering": [
+        { "TargetName": "GG-GPO-Workstations", "TargetType": "Group", "PermissionLevel": "GpoApply" }
+      ],
+      "RegistryPolicies": [
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\Edge", "ValueName": "SmartScreenEnabled", "Type": "DWord", "Value": 1 },
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\Edge", "ValueName": "PasswordManagerEnabled", "Type": "DWord", "Value": 0 }
+      ],
+      "Links": [
+        { "Target": "OU=Workstations,DC=contoso,DC=com", "Enabled": true, "Enforced": false, "Order": 7 }
+      ]
+    },
+    {
+      "Name": "Baseline - Workstations OneDrive",
+      "Comment": "OneDrive enterprise control baseline.",
+      "Status": "AllSettingsEnabled",
+      "WmiFilter": {
+        "Name": "Windows 10 and 11 Workstations",
+        "Description": "Targets client OS only",
+        "Query": "SELECT * FROM Win32_OperatingSystem WHERE ProductType = '1'"
+      },
+      "SecurityFiltering": [
+        { "TargetName": "GG-GPO-Workstations", "TargetType": "Group", "PermissionLevel": "GpoApply" }
+      ],
+      "RegistryPolicies": [
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\OneDrive", "ValueName": "SilentAccountConfig", "Type": "DWord", "Value": 1 }
+      ],
+      "Links": [
+        { "Target": "OU=Workstations,DC=contoso,DC=com", "Enabled": true, "Enforced": false, "Order": 8 }
+      ]
+    },
+    {
+      "Name": "Baseline - Workstations Office",
+      "Comment": "Microsoft 365 Apps baseline placeholder.",
+      "Status": "AllSettingsEnabled",
+      "WmiFilter": {
+        "Name": "Windows 10 and 11 Workstations",
+        "Description": "Targets client OS only",
+        "Query": "SELECT * FROM Win32_OperatingSystem WHERE ProductType = '1'"
+      },
+      "SecurityFiltering": [
+        { "TargetName": "GG-GPO-Workstations", "TargetType": "Group", "PermissionLevel": "GpoApply" }
+      ],
+      "RegistryPolicies": [
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\Office\\16.0\\Common\\OfficeUpdate", "ValueName": "HideEnableDisableUpdates", "Type": "DWord", "Value": 1 }
+      ],
+      "Links": [
+        { "Target": "OU=Workstations,DC=contoso,DC=com", "Enabled": true, "Enforced": false, "Order": 9 }
+      ]
+    },
+    {
+      "Name": "Baseline - Servers Core",
+      "Comment": "Core member server baseline.",
+      "Status": "AllSettingsEnabled",
+      "WmiFilter": {
+        "Name": "Member Servers Only",
+        "Description": "Targets server OS excluding domain controllers",
+        "Query": "SELECT * FROM Win32_OperatingSystem WHERE ProductType = '3'"
+      },
+      "SecurityFiltering": [
+        { "TargetName": "GG-GPO-Servers", "TargetType": "Group", "PermissionLevel": "GpoApply" }
+      ],
+      "RegistryPolicies": [
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\Windows\\Explorer", "ValueName": "NoAutoplayfornonVolume", "Type": "DWord", "Value": 1 }
+      ],
+      "Links": [
+        { "Target": "OU=Servers,DC=contoso,DC=com", "Enabled": true, "Enforced": false, "Order": 1 }
+      ]
+    },
+    {
+      "Name": "Baseline - Servers Firewall",
+      "Comment": "Windows Defender Firewall for servers.",
+      "Status": "AllSettingsEnabled",
+      "WmiFilter": {
+        "Name": "Member Servers Only",
+        "Description": "Targets server OS excluding domain controllers",
+        "Query": "SELECT * FROM Win32_OperatingSystem WHERE ProductType = '3'"
+      },
+      "SecurityFiltering": [
+        { "TargetName": "GG-GPO-Servers", "TargetType": "Group", "PermissionLevel": "GpoApply" }
+      ],
+      "RegistryPolicies": [
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile", "ValueName": "EnableFirewall", "Type": "DWord", "Value": 1 }
+      ],
+      "Links": [
+        { "Target": "OU=Servers,DC=contoso,DC=com", "Enabled": true, "Enforced": false, "Order": 2 }
+      ]
+    },
+    {
+      "Name": "Baseline - Servers Defender Antivirus",
+      "Comment": "Defender Antivirus member server baseline.",
+      "Status": "AllSettingsEnabled",
+      "WmiFilter": {
+        "Name": "Member Servers Only",
+        "Description": "Targets server OS excluding domain controllers",
+        "Query": "SELECT * FROM Win32_OperatingSystem WHERE ProductType = '3'"
+      },
+      "SecurityFiltering": [
+        { "TargetName": "GG-GPO-Servers", "TargetType": "Group", "PermissionLevel": "GpoApply" }
+      ],
+      "RegistryPolicies": [
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\Windows Defender\\Real-Time Protection", "ValueName": "DisableRealtimeMonitoring", "Type": "DWord", "Value": 0 }
+      ],
+      "Links": [
+        { "Target": "OU=Servers,DC=contoso,DC=com", "Enabled": true, "Enforced": false, "Order": 3 }
+      ]
+    },
+    {
+      "Name": "Baseline - Servers BitLocker",
+      "Comment": "BitLocker policy placeholder for servers.",
+      "Status": "AllSettingsEnabled",
+      "WmiFilter": {
+        "Name": "Member Servers Only",
+        "Description": "Targets server OS excluding domain controllers",
+        "Query": "SELECT * FROM Win32_OperatingSystem WHERE ProductType = '3'"
+      },
+      "SecurityFiltering": [
+        { "TargetName": "GG-GPO-Servers", "TargetType": "Group", "PermissionLevel": "GpoApply" }
+      ],
+      "RegistryPolicies": [
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\FVE", "ValueName": "UseAdvancedStartup", "Type": "DWord", "Value": 1 }
+      ],
+      "Links": [
+        { "Target": "OU=Servers,DC=contoso,DC=com", "Enabled": true, "Enforced": false, "Order": 4 }
+      ]
+    },
+    {
+      "Name": "Baseline - Domain Controllers Audit",
+      "Comment": "Domain controller audit and hardening placeholder.",
+      "Status": "AllSettingsEnabled",
+      "WmiFilter": {
+        "Name": "Domain Controllers",
+        "Description": "Targets DCs only",
+        "Query": "SELECT * FROM Win32_ComputerSystem WHERE DomainRole = 4 OR DomainRole = 5"
+      },
+      "SecurityFiltering": [
+        { "TargetName": "Domain Controllers", "TargetType": "Group", "PermissionLevel": "GpoApply" }
+      ],
+      "RegistryPolicies": [
+        { "Context": "Computer", "Key": "HKLM\\Software\\Policies\\Microsoft\\Windows\\EventLog\\Security", "ValueName": "MaxSize", "Type": "DWord", "Value": 196608 }
+      ],
+      "Links": [
+        { "Target": "OU=Domain Controllers,DC=contoso,DC=com", "Enabled": true, "Enforced": false, "Order": 1 }
+      ]
+    }
+  ]
+}
