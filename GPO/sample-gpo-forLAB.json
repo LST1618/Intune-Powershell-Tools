@@ -1,20 +1,9 @@
 {
-  "DomainFqdn": "contoso.com",
-  "Server": "dc01.contoso.com",
+  "DomainFqdn": "CORP.CONTOSO.COM",
+  "Server": "DC1.corp.contoso.com",
   "CreateMissingWmiFilters": true,
   "RemoveAuthenticatedUsersApply": false,
   "Gpos": [
-    {
-      "Name": "Baseline - Domain Password Policy",
-      "Comment": "Reference placeholder for domain account policy; review against Default Domain Policy before using.",
-      "Status": "AllSettingsEnabled",
-      "SecurityFiltering": [
-        { "TargetName": "Authenticated Users", "TargetType": "Group", "PermissionLevel": "GpoRead" }
-      ],
-      "Links": [
-        { "Target": "DC=contoso,DC=com", "Enabled": true, "Enforced": true, "Order": 1 }
-      ]
-    },
     {
       "Name": "Baseline - Workstations Core",
       "Comment": "Core workstation baseline.",

@@ -69,3 +69,9 @@ Resolve-DnsName $domain -Type TXT | Where-Object { $_.Strings -match "v=spf1" } 
 Install-WindowsFeature -Name RSAT-AD-Tools -IncludeAllSubFeature -verbose
 
 Import-Module ActiveDirectory -verbose
+
+
+##Full Hostname / FQDN
+[System.Net.Dns]::GetHostEntry($env:COMPUTERNAME).HostName
+#PS C:\Users\Administrator> [System.Net.Dns]::GetHostEntry($env:COMPUTERNAME).HostName
+#DC1.corp.contoso.com

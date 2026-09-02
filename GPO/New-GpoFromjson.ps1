@@ -1,4 +1,28 @@
-
+#   MIT License
+#
+#   Copyright (c) 2026 
+#
+#   Łukasz Stachów
+#   https://github.com/LST1618
+#   https://www.linkedin.com/in/%C5%82ukasz-stach%C3%B3w-b1b886270/
+#
+#   Permission is hereby granted, free of charge, to any person obtaining a copy
+#   of this software and associated documentation files (the "Software"), to deal
+#   in the Software without restriction, including without limitation the rights
+#   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#   copies of the Software, and to permit persons to whom the Software is
+#   furnished to do so, subject to the following conditions:
+#
+#   The above copyright notice and this permission notice shall be included in all
+#   copies or substantial portions of the Software.
+#
+#   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+#   SOFTWARE.
 
 #.\New-GpoSeed.ps1 -ConfigPath .\sample-gpo-seed.json -LogFolder .\Logs
 
@@ -126,7 +150,11 @@ function Validate-Config {
             Validate-Enum -Value $gpo.Status -Allowed @('AllSettingsEnabled','UserSettingsDisabled','ComputerSettingsDisabled','AllSettingsDisabled') -FieldName "GPO Status for '$($gpo.Name)'"
         }
 
-        foreach ($reg in @($gpo.RegistryPolicies)) {
+
+
+        foreach ($reg in @($gpo.RegistryPolicies))  {
+ 
+                    
             Validate-Enum -Value $reg.Context -Allowed @('Computer','User') -FieldName "RegistryPolicies.Context for '$($gpo.Name)'"
             Validate-Enum -Value $reg.Type -Allowed @('String','ExpandString','Binary','DWord','MultiString','QWord') -FieldName "RegistryPolicies.Type for '$($gpo.Name)'"
             if ([string]::IsNullOrWhiteSpace($reg.Key) -or [string]::IsNullOrWhiteSpace($reg.ValueName)) {
@@ -222,19 +250,7 @@ function Ensure-Gpo {
         $gpo = New-GPO @newParams
         Write-Log -Message "Created GPO '$Name'" -Phase 'Create' -Gpo $Name -Action 'New-GPO' -Result 'Success'
     }
-    else {
-        Write-Log -Message "GPO '$Name' already exists; updating settings." -Level 'WARN' -Phase 'Create' -Gpo $Name -Action 'Get-GPO' -Result 'Exists'
-        if ($Comment) {
-            $gpo | Set-GPO -Comment $Comment | Out-Null
-            Write-Log -Message "Updated comment for '$Name'" -Phase 'Create' -Gpo $Name -Action 'Set-GPO' -Result 'Success'
-        }
-    }
-
-    if ($Status) {
-        $gpo | Set-GPO -Status $Status | Out-Null
-        Write-Log -Message "Set status '$Status' for '$Name'" -Phase 'Create' -Gpo $Name -Action 'Set-GPO' -Result 'Success'
-    }
-
+    
     return (Get-GPO -Name $Name -Domain $Domain -Server $Server)
 }
 
