@@ -75,3 +75,12 @@ Import-Module ActiveDirectory -verbose
 [System.Net.Dns]::GetHostEntry($env:COMPUTERNAME).HostName
 #PS C:\Users\Administrator> [System.Net.Dns]::GetHostEntry($env:COMPUTERNAME).HostName
 #DC1.corp.contoso.com
+
+
+### GPO property values for GPO automations
+$gpm = New-Object -ComObject GPMgmt.GPM
+$constants = $gpm.GetConstants()
+
+$constants.PSObject.Properties |
+    Select-Object Name |
+    Format-Table -AutoSize

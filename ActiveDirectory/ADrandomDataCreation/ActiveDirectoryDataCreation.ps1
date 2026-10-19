@@ -306,7 +306,10 @@ $groupsToCreate = @(
     @{ Name="APP-VPN-Client"; Path=$appGroupPath; Scope="Global"; Category="Security"; Description="Application assignment test group" },
     @{ Name="APP-Adobe-Users"; Path=$appGroupPath; Scope="Global"; Category="Security"; Description="Application assignment test group" },
     @{ Name="RBAC-Helpdesk-L1"; Path=$rbacGroupPath; Scope="Global"; Category="Security"; Description="Helpdesk role testing" },
-    @{ Name="RBAC-Helpdesk-L2"; Path=$rbacGroupPath; Scope="Global"; Category="Security"; Description="Helpdesk role testing" }
+    @{ Name="RBAC-Helpdesk-L2"; Path=$rbacGroupPath; Scope="Global"; Category="Security"; Description="Helpdesk role testing" },
+    @{ Name="GG-GPO-Workstations"; Path=$secGroupPath; Scope="Global"; Category="Security"; Description="Security filtering group for workstation GPOs" },
+    @{ Name="GG-GPO-Servers"; Path=$secGroupPath; Scope="Global"; Category="Security"; Description="Security filtering group for server GPOs" },
+    @{ Name="Domain Controllers"; Path=$secGroupPath; Scope="Global"; Category="Security"; Description="Security filtering group for domain controller GPOs" }
 )
 
 foreach ($g in $groupsToCreate) {

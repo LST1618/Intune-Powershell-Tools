@@ -43,6 +43,7 @@ $script:RunId = Get-Date -Format 'yyyyMMdd_HHmmss'
 $script:CsvLog = $null
 $script:TranscriptPath = $null
 
+
 function Initialize-Logging {
     param([string]$Folder)
 
@@ -149,7 +150,6 @@ function Validate-Config {
         if ($gpo.Status) {
             Validate-Enum -Value $gpo.Status -Allowed @('AllSettingsEnabled','UserSettingsDisabled','ComputerSettingsDisabled','AllSettingsDisabled') -FieldName "GPO Status for '$($gpo.Name)'"
         }
-
 
 
         foreach ($reg in @($gpo.RegistryPolicies))  {
@@ -308,8 +308,10 @@ function Get-OrCreateWmiFilter {
         [bool]$CreateIfMissing
     )
 
-    $criteria = $GpmDomain.CreateSearchCriteria()
-    $criteria.Add($Constants.SearchPropertyWMIFilterName, $Constants.SearchOpEquals, $Name)
+    $gpm = $gpmEnv.Gpm
+
+    $criteria = $Gpm.CreateSearchCriteria()
+    $criteria.Add($Constants.SearchPropertyGPOWMIFilter, $Constants.SearchOpEquals, $Name)
     $filters = $GpmDomain.SearchWMIFilters($criteria)
 
     if ($filters.Count -gt 0) {
@@ -336,7 +338,9 @@ function Set-WmiFilterAssignment {
         [object]$WmiFilter
     )
 
-    $criteria = $GpmDomain.CreateSearchCriteria()
+    $gpm = $gpmEnv.Gpm
+
+    $criteria = $Gpm.CreateSearchCriteria()
     $criteria.Add($Constants.SearchPropertyGPODisplayName, $Constants.SearchOpEquals, $GpoName)
     $gpos = $GpmDomain.SearchGPOs($criteria)
     if ($gpos.Count -lt 1) {
